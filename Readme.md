@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
-* Студент: [Konstantin Ustyugov](https://up.htmlacademy.ru/adaptive/26/user/1996827).
-* Наставник: `Неизвестно`.
+* Студент: [Konstantin Ustyugov](https://htmlacademy.ru//profile/id1996827). :smirk_cat:
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742). :smiling_imp: 
 
 ---
 
