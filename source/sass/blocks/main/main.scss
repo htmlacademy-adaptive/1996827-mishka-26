@@ -1,0 +1,17 @@
+// global
+@use "../../variables.scss" as *;
+@use "../fonts.scss";
+@use "../base-styles.scss";
+@use "../title.scss";
+@use "../button.scss";
+
+.main {
+  width: 320px;
+  min-height: 490px;
+  padding: 0 30px;
+  display: block;
+  outline: 2px solid #008000;
+  position: relative;
+
+
+}

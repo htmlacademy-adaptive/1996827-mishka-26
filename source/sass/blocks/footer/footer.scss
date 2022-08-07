@@ -1,0 +1,12 @@
+// global
+@use "../../variables.scss" as *;
+@use "../fonts.scss";
+@use "../base-styles.scss";
+@use "../title.scss";
+@use "../button.scss";
+
+.footer {
+  width: 320px;
+  // outline: 2px solid #dda0dd;
+  outline: 2px solid #008000;
+}

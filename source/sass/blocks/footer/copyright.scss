@@ -1,0 +1,20 @@
+// global
+@use "../../variables.scss" as *;
+@use "../fonts.scss";
+@use "../base-styles.scss";
+@use "../title.scss";
+@use "../button.scss";
+
+.copyright {
+  width: 320px;
+  padding: 0 30px;
+}
+
+.copyright__list {
+  margin: 0 auto;
+  width: 180px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

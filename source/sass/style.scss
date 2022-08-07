@@ -1,4 +1,26 @@
-// Начните писать стили здесь
+// global
+@use "./variables.scss" as *;
+@use "./blocks/fonts.scss";
+@use "./blocks/base-styles.scss";
+@use "./blocks/title.scss";
+@use "./blocks/button.scss";
 
-// test
-//@use "source/sass/test.scss";
+// header
+@use "./blocks/header/header.scss";
+
+// main
+@use "./blocks/main/main.scss";
+@use "./blocks/main/hero.scss";
+@use "./blocks/main/product.scss";
+@use "./blocks/main/about.scss";
+@use "./blocks/main/reviews.scss";
+@use "./blocks/main/contacts.scss";
+// form
+@use "./blocks/main/form.scss";
+// catalog
+@use "./blocks/main/catalog.scss";
+
+// footer
+@use "./blocks/footer/footer.scss";
+@use "./blocks/footer/social.scss";
+@use "./blocks/footer/copyright.scss";

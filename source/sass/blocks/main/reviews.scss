@@ -1,0 +1,81 @@
+// global
+@use "../../variables.scss" as *;
+@use "../fonts.scss";
+@use "../base-styles.scss";
+@use "../title.scss";
+@use "../button.scss";
+
+.reviews {
+  outline: 2px solid #dda0dd;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__quote {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  // 30/15
+  line-height: 2;
+}
+
+.reviews__author {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  // 24/17
+  line-height: 1.41;
+}
+
+.reviews__user-alias {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__button {
+  width: 130px;
+  min-height: 52px;
+  border-color: $color-gray-light;
+}
+
+.reviews__button--prev {
+  border-right-width: 1px;
+}
+
+.reviews__button--next {
+  border-left-width: 1px;
+}
+
+.reviews__button-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.reviews__button--write {
+  width: 260px;
+  height: 52px;
+}
+
+.reviews::after {
+  width: 320px;
+  height: 8px;
+  position: absolute;
+  content: "";
+  // top: 775px;
+  bottom: -55px;
+  right: -30px;
+  background-image: url("../../../img/icon-zigzag-line-desktop.svg");
+  background-repeat: no-repeat;
+}
