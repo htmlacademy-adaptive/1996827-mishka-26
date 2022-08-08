@@ -1,9 +1,4 @@
-// global
-@use "../../variables.scss" as *;
-@use "../fonts.scss";
-@use "../base-styles.scss";
-@use "../title.scss";
-@use "../button.scss";
+@use "../global/variables.scss" as *;
 
 .hero {
   margin: 0 -30px;

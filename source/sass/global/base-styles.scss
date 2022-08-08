@@ -1,6 +1,5 @@
-// global
-@use "../variables.scss" as *;
 @use "./fonts.scss";
+@use "./variables.scss" as *;
 
 html {
   height: 100%;
@@ -31,15 +30,3 @@ img {
   object-fit: contain;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
