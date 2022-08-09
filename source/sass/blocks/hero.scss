@@ -1,0 +1,66 @@
+@use "../global/variables.scss" as *;
+
+.hero {
+  margin: 0 -30px;
+  background-image: url("../../../img/mobile-hero.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.hero_container {
+  padding: 0 30px;
+  outline: 2px solid #dda0dd;
+}
+
+.hero__title {
+  padding-top: 73px;
+  padding-bottom: 136px;
+  text-align: center;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__item {
+  margin: 0 -30px;
+  min-height: 103px;
+  background-color: #008000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__item:nth-child(odd) {
+  background-color: $color-green;
+}
+
+.hero__item:nth-child(even) {
+  background-color: $color-green-dark;
+}
+
+.hero__link {
+  padding-left: 30px;
+  display: flex;
+  position: relative;
+  font-size: 19px;
+  // 24/19=1.26
+  line-height: 1.26;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.hero__link svg {
+  position: absolute;
+  top: -5px;
+  right: -130px;
+}
+
+.hero__categotry {
+  width: 130px;
+  display: block;
+}

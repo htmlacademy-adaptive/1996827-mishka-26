@@ -1,0 +1,81 @@
+@use "../global/variables.scss" as *;
+
+.product {
+  outline: 2px solid #dda0dd;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.product__week {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  // line-height: 20px; 20/17=1.11
+  line-height: 1.17;
+  color: $color-green;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  // 24/15 = 1.6
+  line-height: 1.6;
+}
+
+.product__features {
+  width: 260px;
+  margin-bottom: 41px;
+  display: grid;
+  grid-template-columns: 100px 160px;
+  row-gap: 10px;
+}
+
+.product__features-name {
+  font-weight: 400;
+  font-size: 15px;
+  // 20/15 = 1.33
+  line-height: 1.33;
+  color: $color-gray;
+}
+
+.product__features-value {
+  font-weight: 400;
+  font-size: 15px;
+  // 20/15 = 1.33
+  line-height: 1.33;
+  color: $color-gray;
+}
+
+.product__priсe {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 17px;
+  // 24/17 = 1.41
+  line-height: 1.41;
+  text-align: center;
+}
+
+.product__button {
+  width: 260px;
+  height: 52px;
+  padding: 16px 70px;
+  // text-transform: uppercase;
+}
+
+.product::after {
+  width: 320px;
+  height: 8px;
+  position: absolute;
+  content: "";
+  // top: 775px;
+  bottom: -55px;
+  right: -30px;
+  background-image: url("../../../img/icon-zigzag-line-desktop.svg");
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+@use "../global/variables.scss" as *;
+
+.button {
+  padding: 0;
+  // min-width: 160px;
+  // min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: $main-font, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  // 20/18 = 1.11
+  line-height: 1.11;
+  color: $color-black;
+  background-color: $color-white;
+  border: 2px solid $color-gray;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  // border: none;
+
+  cursor: pointer;
+
+  // &:hover {
+  //   background-color: $color-text;
+  //   color: $color-white;
+  // }
+
+  // &:active {
+  //   background-color: $color-text;
+  //   color: $color-white;
+  //   opacity: 0.5;
+  // }
+
+  // &:focus-visible {
+  //   outline: 2px solid $color-focus;
+  //   border-radius: 3px;
+  // }
+}

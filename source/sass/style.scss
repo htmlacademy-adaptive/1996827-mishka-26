@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+// global as *
+@use "./global/variables.scss";
+@use "./global/fonts.scss";
+@use "./global/base-styles.scss";
+@use "./global/utils.scss";
+
+// components
+@use "./components/title.scss";
+@use "./components/button.scss";
+@use "./components/form.scss";
+
+// blocks
+@use "./blocks/header.scss";
+@use "./blocks/main.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/product.scss";
+@use "./blocks/about.scss";
+@use "./blocks/reviews.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
