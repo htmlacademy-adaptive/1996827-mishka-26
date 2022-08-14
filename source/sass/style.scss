@@ -11,13 +11,19 @@
 
 // blocks
 @use "./blocks/header.scss";
-@use "./blocks/main.scss";
-@use "./blocks/hero.scss";
-@use "./blocks/product.scss";
-@use "./blocks/about.scss";
-@use "./blocks/reviews.scss";
-@use "./blocks/contacts.scss";
-@use "./blocks/catalog.scss";
-@use "./blocks/footer.scss";
-@use "./blocks/social.scss";
-@use "./blocks/copyright.scss";
+@use "./blocks/navigation.scss";
+@use "./blocks/site-navigation.scss";
+@use "./blocks/site-subnavigation.scss";
+@use "./blocks/user-navigation.scss";
+@use "./blocks/user-subnavigation.scss";
+//
+// @use "./blocks/main.scss";
+// @use "./blocks/hero.scss";
+// @use "./blocks/product.scss";
+// @use "./blocks/about.scss";
+// @use "./blocks/reviews.scss";
+// @use "./blocks/contacts.scss";
+// @use "./blocks/catalog.scss";
+// @use "./blocks/footer.scss";
+// @use "./blocks/social.scss";
+// @use "./blocks/copyright.scss";

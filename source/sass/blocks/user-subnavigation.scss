@@ -1,19 +1,19 @@
 @use "../global/variables.scss" as *;
 
-.user-navigation {
+.user-subnavigation {
   margin: 0;
   padding: 0;
-
-
+  display: none;
   list-style-type: none;
   outline: 2px solid #dda0dd;
   outline-offset: -2px;
 }
 
-.user-navigation .navigation__link {
+.user-subnavigation .navigation__link {
   min-height: 79px;
   min-width: 174px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   color: $color-black;
@@ -23,17 +23,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-navigation {
-    // margin-bottom: 20px;
-    // display: flex;
-    display: grid;
-    // justify-content: center;
-    grid-template-columns: 82px 265px;
+  .user-subnavigation {
+    display: flex;
   }
 
-  .user-navigation .navigation__link {
-    justify-content: center;
-    min-width: 82px;
+  .user-subnavigation .navigation__link {
+    min-width: 348px;
     min-height: 88px;
   }
 }

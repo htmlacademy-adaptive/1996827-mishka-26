@@ -1,1 +1,16 @@
-//
+@use "../global/variables.scss" as *;
+
+.navigation {
+  margin: 0 auto;
+}
+
+// до 768px
+@media (min-width: $tablet-width) {
+  .navigation {
+    // margin: 0 auto;
+    // width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

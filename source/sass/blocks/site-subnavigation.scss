@@ -1,15 +1,15 @@
 @use "../global/variables.scss" as *;
 
-.site-navigation {
+.site-subnavigation {
   margin: 0;
   padding: 0;
-
+  display: none;
   list-style-type: none;
   outline: 2px solid #dda0dd;
   outline-offset: -2px;
 }
 
-.site-navigation .navigation__link {
+.site-subnavigation .navigation__link {
   min-height: 79px;
   min-width: 160px;
   display: flex;
@@ -22,28 +22,28 @@
 }
 
 // от 768
-@media (min-width: $tablet-width) {
-  .site-navigation {
-    display: flex;
-  }
+// @media (min-width: $tablet-width) {
+//   .site-subnavigation {
+//     display: flex;
+//   }
 
-  .site-navigation .navigation__link {
-    // display: flex;
-    min-width: 160px;
-    min-height: 88px;
-  }
-}
+//   .site-subnavigation .navigation__link {
+//     // display: flex;
+//     min-width: 160px;
+//     min-height: 88px;
+//   }
+// }
 
 // от 1150
 @media (min-width: $desktop-width) {
-  .site-navigation {
-    // display: flex;
+  .site-subnavigation {
+    display: flex;
     width: 440px;
   }
 
-  .site-navigation .navigation__link {
+  .site-subnavigation .navigation__link {
     // display: flex;
     width: 220px;
-    // min-height: 88px;
+    min-height: 88px;
   }
 }

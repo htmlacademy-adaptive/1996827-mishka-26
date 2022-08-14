@@ -10,8 +10,8 @@
   margin: 0;
   font-weight: 700;
   font-size: 17px;
-  // line-height: 20px; 20/17=1.11
-  line-height: 1.17;
+  // line-height: 17px; 17/17=1
+  line-height: 1;
   color: $color-green;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -65,7 +65,6 @@
   width: 260px;
   height: 52px;
   padding: 16px 70px;
-  // text-transform: uppercase;
 }
 
 .product::after {
@@ -76,6 +75,29 @@
   // top: 775px;
   bottom: -55px;
   right: -30px;
-  background-image: url("../../../img/icon-zigzag-line-desktop.svg");
+  background-image: url("../../../img/icon-zigzag-line.svg");
+  // background-image: url("../../img/icon-zigzag-fill.svg");
   background-repeat: no-repeat;
+}
+
+// стили для планшета 768px
+@media (min-width: 500px) and (max-width: 768px) {
+  .product__title-wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px solid red;
+  }
+
+  .product__week {
+    margin-top: 20px;
+    margin-right: 13px;
+    width: 100px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    outline: 2px solid blue;
+  }
 }
