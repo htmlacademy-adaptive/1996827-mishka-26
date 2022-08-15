@@ -10,41 +10,40 @@
 <body>
   <header class="header">
     <nav class="header__navigation navigation">
-      <div class="navigation__column-left">
-        <div class="header__logo-wrapper">
-          <a class="header__logo-link" href="index.html">
-            <img class="header__logo" src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka.">
-          </a>
-          <button class="header__button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
-              <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
-              <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
-              </svg>
-          </button>
-        </div>
-
-        <ul class="navigation__list site-navigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-
-        <ul class="navigation__list site-subnavigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Новые поступления</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Распродажа</a>
-          </li>
-        </ul>
+      <!-- <div class="navigation__column-left">      </div> -->
+      <div class="header__logo-wrapper">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo" src="img/logo-mishka-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Mishka.">
+        </a>
+        <button class="header__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+            <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+            <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+            </svg>
+        </button>
       </div>
 
-      <div class="navigation__column-right">
+      <ul class="navigation__list site-navigation">
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__list site-subnavigation">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Новые поступления</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <!-- <div class="navigation__column-right"> -->
         <ul class="navigation__list user-navigation">
           <li class="navigation__item">
             <a class="navigation__link" href="#">
@@ -64,14 +63,8 @@
           </li>
         </ul>
 
-        <ul class="navigation__list user-subnavigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              Бесплатная доставка по России
-            </a>
-          </li>
-        </ul>
-      </div>
+        <p class="user-subnavigation">Бесплатная доставка по России</p>
+      <!-- </div> -->
 
     </nav>
   </header>
