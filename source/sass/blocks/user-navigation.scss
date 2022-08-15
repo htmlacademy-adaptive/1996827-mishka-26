@@ -3,8 +3,7 @@
 .user-navigation {
   margin: 0;
   padding: 0;
-
-
+  grid-area: user-navigation;
   list-style-type: none;
   outline: 2px solid #dda0dd;
   outline-offset: -2px;
@@ -12,28 +11,29 @@
 
 .user-navigation .navigation__link {
   min-height: 79px;
-  min-width: 174px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  // display: grid;
+  // place-items: center;
   color: $color-black;
   text-decoration: none;
   outline: 2px solid #630363;
   // outline-offset: -4px;
 }
 
+// от 768
 @media (min-width: $tablet-width) {
   .user-navigation {
-    // margin-bottom: 20px;
-    // display: flex;
     display: grid;
-    // justify-content: center;
-    grid-template-columns: 82px 265px;
+    grid-template-columns: 82px 1fr;
   }
 
   .user-navigation .navigation__link {
-    justify-content: center;
-    min-width: 82px;
+    display: grid;
+    grid-template-columns: 82px 1fr;
+    place-items: center;
     min-height: 88px;
   }
 }
+

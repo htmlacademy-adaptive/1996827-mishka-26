@@ -12,18 +12,12 @@
 .header__logo-wrapper {
   margin: 0;
   padding: 0;
-  // min-width: 260px;
-  // width: 100%;
   min-height: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: header__logo-wrapper;
+  display: grid;
+  place-items: center;
   outline: 2px solid #dda0dd;
   outline-offset: -2px;
-}
-
-.header__logo {
-  margin: 0 auto;
 }
 
 .header__button {
@@ -38,16 +32,7 @@
 // от 768px
 @media (min-width: $tablet-width) {
   .header {
-    width: 768px;
     padding: 0 50px;
-    margin: 0 auto;
-  }
-
-  .header__logo-wrapper {
-    // min-width: 320px;
-    width: 100%;
-    min-height: 88px;
-    justify-content: flex-start;
   }
 
   .header__button {
@@ -55,20 +40,9 @@
   }
 }
 
-// от 1150px
+// 1050
 @media (min-width: $desktop-width) {
-  .header {
-    width: 1150px;
-    // padding: 0 50px;
-    // margin: 0 auto;
-  }
-
   .header__logo-wrapper {
-    width: 149px;
-    position: absolute;
-    left: 500px;
-    height: 88px;
-    order: 2;
+    place-items: start center;
   }
 }
-

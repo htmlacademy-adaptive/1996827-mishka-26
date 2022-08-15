@@ -4,13 +4,24 @@
   margin: 0 auto;
 }
 
-// до 768px
 @media (min-width: $tablet-width) {
   .navigation {
-    // margin: 0 auto;
-    // width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) minmax(348px, 1fr);
+    grid-template-areas:
+      "header__logo-wrapper user-navigation"
+      "site-navigation user-subnavigation";
+  }
+}
+
+//1050
+@media (min-width: $desktop-width) {
+  .navigation {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: minmax(440px, 1fr) minmax(262px, 1fr) minmax(348px, 1fr);
+    grid-template-areas:
+      "site-navigation header__logo-wrapper user-navigation"
+      "site-subnavigation header__logo-wrapper user-subnavigation";
   }
 }
