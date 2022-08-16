@@ -10,16 +10,17 @@
 @use "./components/form.scss";
 
 // blocks
+// header
 @use "./blocks/header.scss";
 @use "./blocks/navigation.scss";
 @use "./blocks/site-navigation.scss";
 @use "./blocks/site-subnavigation.scss";
 @use "./blocks/user-navigation.scss";
 @use "./blocks/user-subnavigation.scss";
-//
+// main
 @use "./blocks/main.scss";
 @use "./blocks/hero.scss";
-// @use "./blocks/product.scss";
+@use "./blocks/product.scss";
 // @use "./blocks/about.scss";
 // @use "./blocks/reviews.scss";
 // @use "./blocks/contacts.scss";
