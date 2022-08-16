@@ -35,6 +35,10 @@
     padding: 0 50px;
   }
 
+  .header__logo-wrapper {
+    place-items: center start;
+  }
+
   .header__button {
     display: none;
   }

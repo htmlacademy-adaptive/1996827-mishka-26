@@ -22,18 +22,33 @@
   // outline-offset: -4px;
 }
 
+.user-navigation .navigation__link-search {
+  margin-right: auto;
+  outline: 2px solid #07f1de;
+}
+
 // от 768
 @media (min-width: $tablet-width) {
   .user-navigation {
     display: grid;
-    grid-template-columns: 82px 1fr;
+    // grid-template-columns: 82px 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .user-navigation .navigation__link {
-    display: grid;
-    grid-template-columns: 82px 1fr;
+    // display: grid;
+    // grid-template-columns: 82px 1fr;
+    // grid-template-columns: 1fr 1fr;
     place-items: center;
     min-height: 88px;
+  }
+
+  .user-navigation .navigation__link-search {
+    width: 82px;
+  }
+
+  .navigation__text-search {
+    display: none;
   }
 }
 
