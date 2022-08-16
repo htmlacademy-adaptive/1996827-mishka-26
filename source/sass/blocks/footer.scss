@@ -1,5 +1,32 @@
+@use "../global/variables.scss" as *;
+
 .footer {
-  width: 320px;
-  // outline: 2px solid #dda0dd;
+  min-width: 320px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   outline: 2px solid #008000;
+  outline-offset: -2px;
+}
+
+.footer__logo-wrapper {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+  }
+
+  .footer__logo-wrapper {
+    min-height: 143px;
+    display: flex;
+    align-items: center;
+    outline: 2px solid #dda0dd;
+  }
 }
