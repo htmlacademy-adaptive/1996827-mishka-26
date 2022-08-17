@@ -1,6 +1,7 @@
 @use "../global/variables.scss" as *;
 
 .product {
+  margin: 0 auto;
   margin-bottom: 50px;
   outline: 2px solid #dda0dd;
   position: relative;
@@ -131,6 +132,7 @@
 //1050
 @media (min-width: $desktop-width) {
   .product {
+    max-width: 1440px;
     grid-template-columns: 133px 292px 1fr;
     grid-template-areas:
       "product__week product__title product__images"

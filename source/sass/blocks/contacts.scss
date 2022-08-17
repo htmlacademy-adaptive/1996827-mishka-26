@@ -1,6 +1,7 @@
 @use "../global/variables.scss" as *;
 
 .contacts {
+  margin: 0 auto;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@
   }
 
   .contacts {
+    max-width: 1440px;
     display: grid;
     grid-template-columns: mimax(469px, 1fr) minmax(525px, 1fr);
     column-gap: 56px;

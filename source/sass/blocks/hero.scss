@@ -2,6 +2,7 @@
 
 .hero {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 50px;
   outline: 2px solid #dda0dd;
   outline-offset: -2px;
@@ -63,6 +64,13 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero {
+    max-width: 1440px;
+  }
+}
+
 
 // .hero::before {
 //   width: 320px;

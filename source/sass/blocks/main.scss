@@ -5,6 +5,7 @@
   min-height: 490px;
   // width: 100%;
   padding: 0 30px;
+  margin: 0 auto;
   outline: 2px solid #008000;
   outline-offset: -2px;
   position: relative;
@@ -16,3 +17,9 @@
     padding: 0 50px;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .main {
+//     max-width: 1440px;
+//   }
+// }

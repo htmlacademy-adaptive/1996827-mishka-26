@@ -1,6 +1,7 @@
 @use "../global/variables.scss" as *;
 
 .reviews {
+  margin: 0 auto;
   margin-bottom: 100px;
   position: relative;
   outline: 2px solid #dda0dd;
@@ -89,5 +90,11 @@
   .reviews__button-write {
     margin: 0;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    max-width: 1440px;
   }
 }
