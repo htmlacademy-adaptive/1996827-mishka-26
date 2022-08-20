@@ -132,7 +132,7 @@
 //1050
 @media (min-width: $desktop-width) {
   .product {
-    max-width: 1440px;
+    max-width: 1050px;
     grid-template-columns: 133px 292px 1fr;
     grid-template-areas:
       "product__week product__title product__images"

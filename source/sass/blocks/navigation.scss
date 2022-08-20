@@ -17,7 +17,7 @@
 //1050
 @media (min-width: $desktop-width) {
   .navigation {
-    max-width: 1440px;
+    max-width: 1050px;
     display: grid;
     grid-template-columns: minmax(440px, 1fr) minmax(262px, 1fr) minmax(348px, 1fr);
     grid-template-areas:
