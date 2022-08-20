@@ -10,6 +10,7 @@
 @use "./components/form.scss";
 
 // blocks
+
 // header
 @use "./blocks/header.scss";
 @use "./blocks/navigation.scss";
@@ -29,5 +30,6 @@
 @use "./blocks/social.scss";
 @use "./blocks/copyright.scss";
 
-// @use "./blocks/catalog.scss";
-
+// catalog
+@use "./blocks/catalog.scss";
+@use "./blocks/process.scss";
