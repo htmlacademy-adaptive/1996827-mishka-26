@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -59,7 +59,7 @@ img {
 .title {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 27px;
   line-height: 1.11;
@@ -77,7 +77,7 @@ img {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Open Sans", "Arial", sans-serif, "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -91,6 +91,49 @@ img {
   cursor: pointer;
 }
 
+.order {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  outline: 2px solid #dda0dd;
+  outline-offset: -2px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+  border: none;
+}
+
+.form__title {
+  margin: 0;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  min-width: 260px;
+  height: 52px;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .order {
+    max-width: 1050px;
+  }
+
+  .form__fieldset-color .form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1150px) {
+  .form__fieldset-color .form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .header {
   min-width: 320px;
   width: 100%;
@@ -777,5 +820,161 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.catalog {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  outline: 2px solid #dda0dd;
+  outline-offset: -2px;
+}
+
+.catalog__title {
+  margin: 0;
+  text-align: center;
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr);
+  list-style-type: none;
+  outline: 2px solid #d60b60;
+  outline-offset: -4px;
+}
+
+.catalog__toy-name,
+.catalog__toy-description,
+.catalog__toy-price {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    max-width: 1050px;
+  }
+
+  .catalog__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+
+  .catalog__toy-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__toy-price {
+    margin-top: auto;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog__item {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-auto-flow: column;
+    outline: 2px solid #0badd6;
+    outline-offset: -2px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(3, 316px);
+    column-gap: 51px;
+  }
+
+  .catalog__toy-price {
+    margin-top: 0;
+  }
+}
+.process {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  outline: 2px solid #dda0dd;
+  outline-offset: -2px;
+}
+
+.process__title {
+  margin: 0 auto;
+  width: 156px;
+  display: block;
+  grid-area: process__title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.process__video-wrapper {
+  margin: 0 auto;
+  width: 260px;
+  min-height: 195px;
+  grid-area: process__video-wrapper;
+  display: block;
+}
+
+.process__text {
+  margin: 0 auto;
+  width: 199px;
+  grid-area: process__text;
+}
+
+.process__button {
+  margin: 0 auto;
+  width: 192px;
+  height: 52px;
+  display: flex;
+  grid-area: process__button;
+}
+
+@media (min-width: 768px) {
+  .process {
+    max-width: 1050px;
+    display: grid;
+    grid-template-rows: minmax(195px, 455px) min-content 1fr min-content;
+    grid-template-areas: "process__video-wrapper" "process__title" "process__text" "process__button";
+  }
+
+  .process__title {
+    min-width: 217px;
+  }
+
+  .process__text {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .process__button {
+    margin: 0 auto;
+    width: 584px;
+  }
+}
+@media (min-width: 1150px) {
+  .process {
+    grid-template-rows: min-content;
+    grid-template-columns: 683px 367px;
+    grid-template-areas: "process__video-wrapper process__title" "process__video-wrapper process__text" "process__video-wrapper process__button";
+  }
+
+  .process__title {
+    min-width: 178px;
+    height: 48px;
+  }
+
+  .process__video-wrapper {
+    min-height: 455px;
+  }
+
+  .process__button {
+    margin: 0 auto;
+    width: 170px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
