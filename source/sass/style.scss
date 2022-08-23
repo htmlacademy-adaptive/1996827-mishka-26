@@ -14,10 +14,10 @@
 // header
 @use "./blocks/header.scss";
 @use "./blocks/navigation.scss";
-@use "./blocks/site-navigation.scss";
-@use "./blocks/site-subnavigation.scss";
-@use "./blocks/user-navigation.scss";
-@use "./blocks/user-subnavigation.scss";
+@use "./blocks/navigation-site.scss";
+@use "./blocks/navigation-sitesub.scss";
+@use "./blocks/navigation-user.scss";
+@use "./blocks/navigation-usersub.scss";
 // main
 @use "./blocks/main.scss";
 @use "./blocks/hero.scss";

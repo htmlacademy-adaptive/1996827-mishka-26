@@ -1,0 +1,54 @@
+@use "../global/variables.scss" as *;
+
+.navigation-site {
+  margin: 0;
+  padding: 0;
+  grid-area: navigation-site;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  // outline: 2px solid #dda0dd;
+  // outline-offset: -2px;
+}
+
+.navigation-site .navigation__link {
+  min-height: 79px;
+  display: grid;
+  place-items: center;
+  color: $color-black;
+  text-decoration: none;
+  // outline: 2px solid #630363;
+  // outline-offset: -4px;
+}
+
+// от 768
+@media (min-width: $tablet-width) {
+  .navigation-site {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navigation-site-wrapper {
+    background-color: $color-gray-light;
+  }
+
+  .navigation-site .navigation__link {
+    min-height: 88px;
+  }
+}
+
+// от 1050
+@media (min-width: $desktop-width) {
+  .navigation-site {
+    padding-left: max(50px, calc((100vw - 1050px) / 2));
+    display: grid;
+    place-items: center start;
+    // grid-template-columns: repeat(2, minmax(262.5px, 1fr));
+    grid-template-columns: repeat(2, 202.5px);
+  }
+
+  .navigation-site-wrapper {
+    background-color: $color-white;
+  }
+}

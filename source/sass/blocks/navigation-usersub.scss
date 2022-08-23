@@ -1,0 +1,36 @@
+@use "../global/variables.scss" as *;
+
+
+.navigation-usersub {
+  margin: 0;
+  grid-area: navigation-usersub;
+  display: grid;
+  list-style-type: none;
+  // outline: 2px solid #dda0dd;
+  // outline-offset: -2px;
+}
+
+.navigation-usersub .navigation__link {
+  margin: 0;
+  min-height: 79px;
+  display: grid;
+  place-items: center;
+  color: $color-black;
+  text-decoration: none;
+  // outline: 2px solid #630363;
+  // outline-offset: -4px;
+}
+
+// от 768
+@media (min-width: $tablet-width) {
+  .navigation-usersub {
+    padding-right: max(50px, calc((100vw - 1050px) / 2));
+    // grid-template-columns: minmax(320px, 525px);
+    grid-template-columns: minmax(320px, 1fr);
+    background-color: $color-gray-light;
+  }
+
+  .navigation-usersub .navigation__link {
+    place-items: center end;
+  }
+}
