@@ -1,12 +1,12 @@
 @use "../global/variables.scss" as *;
 
 .navigation-site {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   grid-area: navigation-site;
   display: grid;
   grid-template-columns: 1fr;
-  list-style-type: none;
+  // list-style-type: none;
   // outline: 2px solid #dda0dd;
   // outline-offset: -2px;
 }
@@ -34,6 +34,7 @@
   }
 
   .navigation-site .navigation__link {
+    place-items: center start;
     min-height: 88px;
   }
 }

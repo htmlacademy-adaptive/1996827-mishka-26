@@ -2,7 +2,8 @@
 @use "./global/variables.scss";
 @use "./global/fonts.scss";
 @use "./global/base-styles.scss";
-@use "./global/utils.scss";
+@use "./global/reset-list.scss";
+@use "./global/visually-hidden.scss";
 
 // components
 @use "./components/title.scss";

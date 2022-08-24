@@ -1,7 +1,9 @@
 @use "./variables.scss" as *;
 
 html {
+  /* FLEXBOX Sticky Footer */
   height: 100%;
+  //
   box-sizing: border-box;
 }
 
@@ -14,6 +16,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  /* FLEXBOX Sticky Footer */
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  //
   font-family: $main-font;
   font-size: 13px;
   font-weight: 400;
@@ -22,10 +30,14 @@ body {
   background-color: $color-white;
 }
 
+/* FLEXBOX Sticky Footer */
+main {
+  flex-grow: 1;
+}
+
 img {
   height: auto;
   max-width: 100%;
   display: block;
   object-fit: contain;
 }
-
