@@ -100,7 +100,6 @@
     // place-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 42px;
     row-gap: 20px;
     grid-template-areas:
       "product__title product__week"
@@ -134,6 +133,7 @@
   .product {
     max-width: 1050px;
     grid-template-columns: 133px 292px 1fr;
+    column-gap: 50px;
     grid-template-areas:
       "product__week product__title product__images"
       "product__week product__text product__images"

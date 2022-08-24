@@ -4,8 +4,8 @@
   margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
-  outline: 2px solid #dda0dd;
-  outline-offset: -2px;
+  // outline: 2px solid #dda0dd;
+  // outline-offset: -2px;
 }
 
 .catalog__title {
@@ -19,8 +19,8 @@
   display: grid;
   grid-template-columns: minmax(260px, 1fr);
   list-style-type: none;
-  outline: 2px solid #d60b60;
-  outline-offset: -4px;
+  // outline: 2px solid #d60b60;
+  // outline-offset: -4px;
 }
 
 .catalog__toy-name,
@@ -56,8 +56,8 @@
     display: grid;
     grid-template-rows: min-content min-content;
     grid-auto-flow: column;
-    outline: 2px solid #0badd6;
-    outline-offset: -2px;
+    // outline: 2px solid #0badd6;
+    // outline-offset: -2px;
   }
 
   .catalog__list {

@@ -1,11 +1,12 @@
 @use "../global/variables.scss" as *;
 
 .social {
+  // margin: 0 auto;
   min-height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 2px solid #dda0dd;
+  // outline: 2px solid #dda0dd;
   background-color: #f1f1f1;
 }
 
