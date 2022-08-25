@@ -2,7 +2,7 @@
 
 .catalog {
   margin: 0 auto;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   position: relative;
   // outline: 2px solid #dda0dd;
   // outline-offset: -2px;
@@ -15,7 +15,7 @@
 
 .catalog__list {
   padding: 0;
-  margin: 0 auto;
+  // margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(260px, 1fr);
   list-style-type: none;
@@ -37,8 +37,7 @@
 
   .catalog__item {
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
   }
 
   .catalog__toy-wrapper {

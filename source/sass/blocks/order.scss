@@ -1,1 +1,56 @@
-//
+@use "../global/variables.scss" as *;
+
+.form__title {
+  margin: 0;
+  margin-bottom: 20px;
+  grid-area: product__week;
+  font-weight: 700;
+  font-size: 17px;
+  // line-height: 17px; 17/17=1
+  line-height: 1;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.form__text-additionally {
+  margin: 0;
+  width: 320px;
+  height: 52px;
+  display: block;
+}
+
+.form__button {
+  margin: 0;
+  width: 320px;
+  height: 52px;
+  display: block;
+}
+
+// от 768px
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__title {
+    grid-column: 1 / 2;
+  }
+
+  .form__list {
+    grid-column: 2 / 3;
+  }
+
+  .form__wrap-additionally {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__text-additionally {
+    order: 2;
+  }
+
+  .form__button {
+    order: 1;
+  }
+}
