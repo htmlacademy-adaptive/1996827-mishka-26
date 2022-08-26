@@ -17,7 +17,7 @@
 .navigation__sitesub .navigation__item {
   min-height: 79px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -30,6 +30,7 @@
     padding-left: max(50px, calc((100vw - 1050px) / 2));
     flex-direction: row;
     flex-wrap: wrap;
+    // justify-content: space-between;
     box-sizing: border-box;
   }
 
@@ -43,3 +44,102 @@
     // outline-offset: -2px;
   }
 }
+//   .navigation__sitesub {
+//     width: 530px;
+//     padding-left: max(50px, calc((100vw - 1050px) / 2));
+//     padding-right: 150px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     box-sizing: border-box;
+//   }
+
+//   .navigation__sitesub .navigation__item {
+//     width: 218px;
+//     min-height: 88px;
+//     display: flex;
+//     justify-content: start;
+//     align-items: center;
+//     // padding-right: 30px;
+//     outline: 2px solid #2df305;
+//     outline-offset: -2px;
+//   }
+// }
+
+// .navigation__sitesub .navigation__item {
+//   min-height: 88px;
+//   padding-right: 40px;
+//   align-self: center;
+// }
+// }
+
+// .navigation__sitesub {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   outline: 2px solid #dda0dd;
+//   outline-offset: -2px;
+// }
+
+// .navigation__sitesub .navigation__item {
+//   display: flex;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .navigation__sitesub {
+//     padding-left: max(50px, calc((100vw - 1050px) / 2));
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     box-sizing: border-box;
+//   }
+
+//   .navigation__sitesub .navigation__item {
+//     min-height: 88px;
+//     padding-right: 30px;
+//   }
+// }
+
+
+// .navigation-site .navigation__link {
+//   min-height: 79px;
+//   display: grid;
+//   place-items: center;
+//   color: $color-black;
+//   text-decoration: none;
+//   outline: 2px solid #630363;
+//   outline-offset: -4px;
+// }
+
+// от 768
+// @media (min-width: $tablet-width) {
+//   .navigation__site {
+//     background-color: $color-gray-light;
+//     padding-left: 50px;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//   }
+
+//   .navigation-site-wrapper {
+//     background-color: $color-gray-light;
+//   }
+
+//   .navigation-site .navigation__link {
+//     place-items: center start;
+//     min-height: 88px;
+//   }
+// }
+
+// от 1050
+// @media (min-width: $desktop-width) {
+//   .navigation-site {
+//     padding-left: max(50px, calc((100vw - 1050px) / 2));
+//     display: grid;
+//     place-items: center start;
+//     grid-template-columns: repeat(2, minmax(262.5px, 1fr));
+//     grid-template-columns: repeat(2, 202.5px);
+//   }
+
+//   .navigation-site-wrapper {
+//     background-color: $color-white;
+//   }
+// }

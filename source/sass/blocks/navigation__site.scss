@@ -1,10 +1,5 @@
 @use "../global/variables" as *;
 
-.navigation__site-wrapper {
-  grid-area: navigation__site-wrapper;
-  background-color: $color-gray-light;
-}
-
 .navigation__site {
   display: flex;
   flex-direction: column;
@@ -21,9 +16,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .navigation__site-wrapper {
+    grid-area: navigation__site-wrapper;
+    background-color: $color-gray-light;
+  }
+
   .navigation__site {
     padding-left: max(50px, calc((100vw - 1050px) / 2));
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
   }

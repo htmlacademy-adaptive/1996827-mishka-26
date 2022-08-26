@@ -60,6 +60,7 @@
     margin: 0 auto;
     padding: 0;
     grid-template-columns: 1fr 150px 1fr;
+    // grid-template-columns: 450px 150px 450px;
     grid-template-rows: repeat(2, 88px);
     grid-template-areas:
       "navigation__site-wrapper header__logo-wrapper navigation__user"
