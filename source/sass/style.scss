@@ -2,25 +2,25 @@
 @use "./global/variables.scss";
 @use "./global/fonts.scss";
 @use "./global/base-styles.scss";
-@use "./global/reset-list.scss";
-@use "./global/visually-hidden.scss";
+@use "./global/utils.scss";
 
 // components
 @use "./components/title.scss";
 @use "./components/button.scss";
 @use "./components/form.scss";
+@use "./components/link.scss";
 @use "./components/container.scss";
 @use "./components/container-color.scss";
 
 // blocks
 
 // header
-@use "./blocks/header.scss";
-@use "./blocks/navigation.scss";
-@use "./blocks/navigation-site.scss";
-@use "./blocks/navigation-sitesub.scss";
-@use "./blocks/navigation-user.scss";
-@use "./blocks/navigation-usersub.scss";
+@use "./blocks/header";
+@use "./blocks/navigation";
+@use "./blocks/navigation__site";
+@use "./blocks/navigation__sitesub";
+@use "./blocks/navigation__user";
+@use "./blocks/navigation__usersub";
 // main
 @use "./blocks/main.scss";
 @use "./blocks/hero.scss";

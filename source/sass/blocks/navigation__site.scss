@@ -1,0 +1,52 @@
+@use "../global/variables" as *;
+
+.navigation__site-wrapper {
+  grid-area: navigation__site-wrapper;
+  background-color: $color-gray-light;
+}
+
+.navigation__site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // outline: 2px solid #dda0dd;
+  // outline-offset: -2px;
+}
+
+.navigation__site .navigation__item {
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__site {
+    padding-left: max(50px, calc((100vw - 1050px) / 2));
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .navigation__site .navigation__item {
+    width: 167px;
+    min-height: 88px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__site-wrapper {
+    grid-area: navigation__site-wrapper;
+    background-color: $color-white;
+  }
+
+  .navigation__site .navigation__item {
+    width: 220px;
+    min-height: 88px;
+    justify-content: flex-start;
+    align-items: center;
+    // outline: 2px solid #2df305;
+    // outline-offset: -2px;
+  }
+}

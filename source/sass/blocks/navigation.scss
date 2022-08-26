@@ -1,15 +1,17 @@
 
-@use "../global/variables.scss" as *;
+@use "../global/variables" as *;
 
 .navigation {
   margin: 0 auto;
   padding: 0 30px;
+  min-width: $mobile-width;
+  position: relative;
+  // outline: 2px solid #01b7ff;
+  // outline-offset: -2px;
 }
 
-.header__logo-wrapper {
+.navigation__logo-wrapper {
   margin: 0;
-  padding: 0;
-  min-height: 79px;
   grid-area: header__logo-wrapper;
   display: grid;
   place-items: center;
@@ -17,8 +19,7 @@
   // outline-offset: -2px;
 }
 
-.header__toggle {
-  padding: 0;
+.navigation__button-toggle {
   display: block;
   position: absolute;
   right: 30px;
@@ -26,44 +27,52 @@
   background-color: transparent;
 }
 
-// от 768
+.header__logo-color {
+  grid-area: header__logo-color;
+  background-color: $color-gray-light;
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .navigation {
+    margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: minmax(320px, 1fr) minmax(348px, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 88px 88px;
     grid-template-areas:
-      "header__logo-wrapper navigation-user"
-      "navigation-site navigation-usersub";
+      "header__logo-wrapper navigation__user"
+      "navigation__site-wrapper navigation__usersub-wrapper";
   }
 
-  .header__logo-wrapper {
-    width: 240px;
-    padding-left: 50px;
+  .navigation__logo-wrapper {
+    padding-left: max(50px, calc((100vw - 1050px) / 2));
     place-items: center start;
   }
 
-  .header__toggle {
+  .navigation__button-toggle {
     display: none;
   }
 }
 
-// от 1050
 @media (min-width: $desktop-width) {
   .navigation {
-    // max-width: 1050px;
-    display: grid;
-    // grid-template-columns: minmax(525px, 1fr) minmax(262px, 1fr) minmax(348px, 1fr);
-    grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-columns: 405px 360px 285px;
-    // grid-template-columns: minmax(405px, 1fr) 360px 1fr;
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: repeat(2, 88px);
     grid-template-areas:
-      "navigation-site header__logo-wrapper navigation-user"
-      "navigation-sitesub navigation-usersub navigation-usersub";
+      "navigation__site-wrapper header__logo-wrapper navigation__user"
+      "navigation__sitesub-wrapper header__logo-color navigation__usersub";
   }
 
-  .header__logo-wrapper {
-    padding-left: 0;
+  .navigation__logo-wrapper {
+    margin: 0;
+    padding: 0;
     place-items: center;
+  }
+
+  .header__logo-color {
+    display: block;
   }
 }
