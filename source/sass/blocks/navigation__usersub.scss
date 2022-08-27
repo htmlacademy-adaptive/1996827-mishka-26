@@ -3,8 +3,6 @@
 
 .navigation__usersub-wrapper {
   display: none;
-  // outline: 2px solid #dda0dd;
-  // outline-offset: -2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,7 +15,7 @@
   .navigation__usersub {
     display: grid;
     place-items: center end;
-    min-height: 88px;
+    min-height: 89px;
     padding-right: max(50px, calc((100vw - 1050px) / 2));
   }
 }
