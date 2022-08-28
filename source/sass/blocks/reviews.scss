@@ -4,9 +4,6 @@
   margin: 0 auto;
   margin-bottom: 100px;
   position: relative;
-  // outline: 2px solid #dda0dd;
-  display: flex;
-  flex-direction: column;
 }
 
 .reviews__title {
@@ -22,12 +19,12 @@
 
 .reviews__quote {
   margin: 0;
-  // padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   // 30/15
   line-height: 2;
+  color: $color-gray;
 }
 
 .reviews__author {
@@ -44,57 +41,63 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
+  color: $color-gray;
 }
 
 .reviews__button-wrapper {
-  // margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  min-width: 260px;
+  grid-area: reviews__button-wrapper;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .reviews__button {
-  margin: 0 auto;
-  width: 130px;
+  position: relative;
+  min-width: 130px;
   min-height: 52px;
-  border-color: $color-gray-light;
+  background-image: url("../../img/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid $color-gray-light;
+  background-position: 50% 50%;
+
+  &--next {
+    border-right: none;
+    transform: rotate(180deg);
+  }
 }
 
 .reviews__button-write {
-  margin: 0 auto;
-  width: 260px;
-  height: 52px;
+  min-width: 100%;
   grid-area: reviews__button-write;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    // place-items: center;
+    grid-template-columns: 300px 368px;
     grid-template-areas:
       "reviews__title reviews__button-write"
-      "reviews__list reviews__list";
+      "reviews__list reviews__button-wrapper"
+      "reviews__list reviews__button-wrapper";
+    row-gap: 40px;
   }
 
-  .reviews__quote-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .reviews__list {
+    width: 668px;
   }
+
 
   .reviews__button-wrapper {
-    margin: 0;
-    // margin-left: auto;
-    justify-items: end;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    justify-self: end;
+    align-self: end;
   }
 
   .reviews__button-write {
-    margin: 0;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .reviews {
-    max-width: 1050px;
+    min-width: 175px;
+    align-self: flex-start;
+    justify-self: end;
   }
 }
