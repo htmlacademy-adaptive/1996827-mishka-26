@@ -1,10 +1,18 @@
 @use "../global/variables.scss" as *;
 
+// .container-map {
+//   // padding-top: 100px;
+//   background-image: url("../img/contacts/map-mobile1x1.png");
+//   background-repeat: no-repeat;
+//   background-position: 0 200px;
+// }
+
 .contacts {
   margin: 0 auto;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+  position: relative;
   // outline: 2px solid #dda0dd;
 }
 
@@ -18,18 +26,57 @@
 
 .contacts__address {
   margin: 0;
+  display: flex;
 }
 
 .contacts__address-name {
   margin: 0;
+  width: 76px;
+  display: block-inline;
+  font-size: 14px;
+  // 30/14 = 2.14
+  line-height: 2.14;
+  /* or 214% */
+  color: $color-gray;
 }
 
 .contacts__address-value {
   margin: 0;
+  width: 183px;
+  display: block-inline;
+  font-size: 14px;
+  // 30/14 = 2.14
+  line-height: 2.14;
+  /* or 214% */
+  color: $color-gray;
+}
+
+.contacts__email {
+  position: relative;
+  text-decoration: none;
+  color: $color-gray;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $color-green;
+  }
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map-wrapper {
-  // margin: 0 -30px;
+  margin: 0 -30px;
   margin-bottom: 40px;
   grid-area: contacts__map-wrapper;
 }
