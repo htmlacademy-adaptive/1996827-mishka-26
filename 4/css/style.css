@@ -415,7 +415,7 @@ img {
 .hero {
   position: relative;
   padding-bottom: 120px;
-  background-image: url("../../img/hero/hero-mobile2x1.png");
+  background-image: url("../img/hero/hero-mobile2x1.png");
   background-repeat: no-repeat;
   background-position: 50% -17px;
 }
@@ -575,7 +575,7 @@ img {
   background-repeat: no-repeat;
 }
 .about__list-item--flower {
-  background-image: url("../../img/about/flower.svg");
+  background-image: url("../img/about/flower.svg");
   background-size: 33px 38px;
 }
 @media (min-width: 768px) {
@@ -584,7 +584,7 @@ img {
   }
 }
 .about__list-item--money {
-  background-image: url("../../img/about/money.svg");
+  background-image: url("../img/about/money.svg");
   background-size: 47px 27px;
 }
 @media (min-width: 768px) {
@@ -593,7 +593,7 @@ img {
   }
 }
 .about__list-item--heart {
-  background-image: url("../../img/about/heart.svg");
+  background-image: url("../img/about/heart.svg");
   background-size: 34px 27px;
 }
 @media (min-width: 768px) {
@@ -602,7 +602,7 @@ img {
   }
 }
 .about__list-item--ball {
-  background-image: url("../../img/about/ball.svg");
+  background-image: url("../img/about/ball.svg");
   background-size: 35px 34px;
 }
 @media (min-width: 768px) {
@@ -611,7 +611,7 @@ img {
   }
 }
 .about__list-item--rocket {
-  background-image: url("../../img/about/rocket.svg");
+  background-image: url("../img/about/rocket.svg");
   background-size: 55px 23px;
 }
 @media (min-width: 768px) {
@@ -620,7 +620,7 @@ img {
   }
 }
 .about__list-item--gift {
-  background-image: url("../../img/about/gift.svg");
+  background-image: url("../img/about/gift.svg");
   background-size: 33px 32px;
 }
 @media (min-width: 768px) {
