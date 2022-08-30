@@ -1,0 +1,10 @@
+// @use "../global/variables.scss" as *;
+
+// миксины на наведение
+@mixin hover {
+  opacity: 0.6;
+}
+
+@mixin active {
+  opacity: 0.3;
+}

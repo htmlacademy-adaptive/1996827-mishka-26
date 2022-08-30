@@ -3,6 +3,7 @@
 @use "./global/fonts.scss";
 @use "./global/base-styles.scss";
 @use "./global/utils.scss";
+@use "./global/mixins.scss";
 
 // components
 @use "./components/title.scss";
