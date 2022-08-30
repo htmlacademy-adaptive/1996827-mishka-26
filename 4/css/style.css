@@ -223,27 +223,15 @@ img {
 }
 
 .navigation__logo-wrapper {
-  margin: 0;
   min-height: 79px;
   grid-area: header__logo-wrapper;
   display: grid;
   place-items: center;
 }
 
-.header__logo-img:hover {
-  opacity: 0.6;
-}
-.header__logo-img:active {
-  opacity: 0.3;
-}
-
-.header__logo-color {
-  grid-area: header__logo-color;
-  background-color: #f9f9f9;
-  display: none;
-}
-
 .navigation__button-toggle {
+  min-width: 40px;
+  margin-left: auto;
   display: block;
   position: absolute;
   right: 30px;
@@ -257,7 +245,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fit, 89px);
-    grid-template-areas: "header__logo-wrapper navigation__user" "navigation__site-wrapper navigation__usersub-wrapper";
+    grid-template-areas: "header__logo-wrapper navigation__user" "navigation__site-wrapper navigation__usersub";
   }
 
   .navigation__logo-wrapper {
@@ -276,7 +264,7 @@ img {
     grid-template-columns: 1fr 150px 1fr;
     grid-template-rows: repeat(auto-fit, 89px);
     height: auto;
-    grid-template-areas: "navigation__site-wrapper header__logo-wrapper navigation__user" "navigation__sitesub-wrapper header__logo-color navigation__usersub";
+    grid-template-areas: "navigation__site-wrapper header__logo-wrapper navigation__user" "navigation__sitesub-wrapper navigation__usersub navigation__usersub";
   }
 
   .navigation__logo-wrapper {
@@ -400,21 +388,28 @@ img {
     display: none;
   }
 }
-.navigation__usersub-wrapper {
+.navigation__usersub {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .navigation__usersub-wrapper {
-    display: grid;
+  .navigation__usersub {
+    display: block;
+    grid-area: navigation__usersub;
+    padding-right: max(50px, (100vw - 1050px) / 2);
     background-color: #f9f9f9;
   }
 
-  .navigation__usersub {
-    display: grid;
-    place-items: center end;
+  .navigation__usersub .navigation__item {
     min-height: 89px;
-    padding-right: max(50px, (100vw - 1050px) / 2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigation__usersub-text {
+    margin: 0;
+    display: block;
   }
 }
 .hero {
