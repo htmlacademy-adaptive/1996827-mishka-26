@@ -1,14 +1,73 @@
+@use "../global/variables.scss" as *;
+
 .contacts {
-  outline: 2px solid #dda0dd;
+  margin: 0 auto;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  // outline: 2px solid #dda0dd;
 }
 
-.contacts__wrapper {
-  margin: 0 -30px;
+.contacts__title {
+  grid-area: contacts__title;
+}
+
+.contacts__address-wrapper {
+  grid-area: contacts__address-wrapper;
+}
+
+.contacts__address {
+  margin: 0;
+}
+
+.contacts__address-name {
+  margin: 0;
+}
+
+.contacts__address-value {
+  margin: 0;
+}
+
+.contacts__map-wrapper {
+  // margin: 0 -30px;
   margin-bottom: 40px;
+  grid-area: contacts__map-wrapper;
 }
 
 .contacts__button {
+  margin: 0 auto;
   width: 260px;
-  min-height: 52px;
+  height: 52px;
+  grid-area: contacts__button;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__address-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__address {
+    display: grid;
+    grid-template-columns: 82px 257px;
+  }
+}
+
+//1050
+@media (min-width: $desktop-width) {
+  .contacts__address-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts {
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: mimax(469px, 1fr) minmax(525px, 1fr);
+    column-gap: 56px;
+    grid-template-areas:
+      "contacts__title contacts__map-wrapper"
+      "contacts__address-wrapper contacts__map-wrapper"
+      "contacts__button contacts__map-wrapper";
+  }
 }

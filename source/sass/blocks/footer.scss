@@ -1,5 +1,42 @@
+@use "../global/variables.scss" as *;
+
 .footer {
-  width: 320px;
-  // outline: 2px solid #dda0dd;
-  outline: 2px solid #008000;
+  position: relative;
+  background-color: #f1f1f1;
+  // outline: 5px solid #03f3fc;
+  // outline-offset: -5px;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  position: relative;
+  background-color: #f1f1f1;
+  display: grid;
+}
+
+.footer__logo-wrapper {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    padding: 0 50px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__logo-wrapper {
+    min-height: 143px;
+    display: flex;
+    align-items: center;
+    // outline: 2px solid #dda0dd;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 0 50px;
+    max-width: $desktop-width;
+  }
 }

@@ -1,0 +1,39 @@
+@use "../global/variables" as *;
+
+.navigation__sitesub-wrapper {
+  grid-area: navigation__sitesub-wrapper;
+  background-color: $color-gray-fon;
+  display: none;
+}
+
+.navigation__sitesub {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .navigation__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__sitesub-wrapper {
+    display: flex;
+  }
+
+  .navigation__sitesub {
+    padding-left: max(50px, calc((100vw - 1050px) / 2));
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    .navigation__item {
+      width: 167px;
+      min-height: 89px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}

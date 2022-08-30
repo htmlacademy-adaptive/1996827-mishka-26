@@ -1,0 +1,27 @@
+@use "../global/variables.scss" as *;
+
+.link {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+
+  color: $color-black;
+  // border: 2px solid ;
+
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    // opacity: 0.6;
+    color: rgba($color-black, 0.6);
+  }
+}
+

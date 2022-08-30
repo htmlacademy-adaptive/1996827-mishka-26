@@ -1,0 +1,39 @@
+@use "../global/variables" as *;
+
+.navigation__user {
+  grid-area: navigation__user;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation__user .navigation__item {
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__user {
+    padding-right: max(50px, calc((100vw - 1050px) / 2));
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .navigation__item {
+      min-height: 89px;
+    }
+
+    .navigation__link-search {
+      width: 84px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navigation__text-search {
+      display: none;
+    }
+  }
+}

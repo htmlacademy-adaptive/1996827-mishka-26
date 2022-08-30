@@ -8,16 +8,35 @@
 @use "./components/title.scss";
 @use "./components/button.scss";
 @use "./components/form.scss";
+@use "./components/link.scss";
+@use "./components/container.scss";
+@use "./components/container-color.scss";
 
 // blocks
-@use "./blocks/header.scss";
+
+// header
+@use "./blocks/header";
+@use "./blocks/navigation";
+@use "./blocks/navigation__site";
+@use "./blocks/navigation__sitesub";
+@use "./blocks/navigation__user";
+@use "./blocks/navigation__usersub";
+// main
 @use "./blocks/main.scss";
 @use "./blocks/hero.scss";
 @use "./blocks/product.scss";
 @use "./blocks/about.scss";
 @use "./blocks/reviews.scss";
 @use "./blocks/contacts.scss";
-@use "./blocks/catalog.scss";
+// footer
 @use "./blocks/footer.scss";
 @use "./blocks/social.scss";
 @use "./blocks/copyright.scss";
+
+// catalog
+@use "./blocks/catalog.scss";
+@use "./blocks/process.scss";
+
+// form
+@use "./blocks/order.scss";
+

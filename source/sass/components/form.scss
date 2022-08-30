@@ -1,1 +1,48 @@
-//
+@use "../global/variables.scss" as *;
+
+.order {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  outline: 2px solid #dda0dd;
+  outline-offset: -2px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+  border: none;
+}
+
+.form__title {
+  margin: 0;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  min-width: 260px;
+  height: 52px;
+  list-style-type: none;
+}
+
+// от 768px
+@media (min-width: $tablet-width) {
+  .order {
+    max-width: 1050px;
+  }
+
+  .form__fieldset-color .form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-color .form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

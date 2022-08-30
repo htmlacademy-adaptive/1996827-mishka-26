@@ -1,13 +1,28 @@
+@use "../global/variables.scss" as *;
+
 .copyright {
-  width: 320px;
-  padding: 0 30px;
+  // margin: 0 auto;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // outline: 2px solid #dda0dd;
+  background-color: #f1f1f1;
 }
 
 .copyright__list {
   margin: 0 auto;
-  width: 180px;
-  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link svg {
+  margin-left: 40px;
 }

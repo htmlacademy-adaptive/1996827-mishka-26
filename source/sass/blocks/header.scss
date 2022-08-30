@@ -1,28 +1,6 @@
+@use "../global/variables.scss" as *;
+
 .header {
-  width: 320px;
-  padding: 0 30px;
-  outline: 2px solid #008000;
+  min-width: 320px;
   position: relative;
-}
-
-.header__inner {
-  min-height: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: 2px solid #dda0dd;
-}
-
-.header__logo {
-  display: block;
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.header__button {
-  padding: 0;
-  position: absolute;
-  right: 30px;
-  border: none;
-  background-color: transparent;
 }
