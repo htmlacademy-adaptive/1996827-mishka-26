@@ -1,4 +1,5 @@
-@use "../global/variables" as *;
+@use "../global/variables.scss" as *;
+@use "../global/mixins.scss" as *;
 
 .navigation__user {
   grid-area: navigation__user;
@@ -14,6 +15,20 @@
   align-items: center;
 }
 
+.navigation__user .navigation__link {
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    path {
+      fill: $color-green-dark;
+      opacity: 1;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .navigation__user {
     padding-right: max(50px, calc((100vw - 1050px) / 2));
@@ -26,7 +41,14 @@
     }
 
     .navigation__link-search {
-      width: 84px;
+      // width: 84px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navigation__link-recycled {
+      // width: 84px;
       display: flex;
       justify-content: center;
       align-items: center;
