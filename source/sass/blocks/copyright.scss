@@ -39,3 +39,19 @@
   margin-left: 40px;
 }
 
+// .copyright__title:hover + .copyright__link path {
+//   fill: $color-black;
+//   padding: 0;
+// }
+
+.copyright__title {
+  &:hover + .copyright__link {
+    path {
+      fill: $color-green-dark;
+    }
+  }
+
+  &:active + .copyright__link {
+    @include active;
+  }
+}
