@@ -4,7 +4,6 @@
   position: relative;
   // margin-bottom: 50px;
   padding-bottom: 120px;
-  // background-image: url("../../img/hero/hero-mobile2x1.png");
   background-image: url("../img/hero/hero-mobile2x1.png");
   background-repeat: no-repeat;
   background-position: 50% -17px;
@@ -18,8 +17,6 @@
 }
 
 .hero__list {
-  // min-width: 320px;
-  // max-width: 768px;
   display: flex;
   flex-direction: column;
   padding: 0 -30px;
@@ -44,13 +41,11 @@
 
 .hero__link {
   margin: 0 auto;
-  // max-width: 1050px;
   padding: 0 30px;
   min-height: 103px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-size: 19px;
   //24/19=1.26
   line-height: 1.26;
@@ -68,27 +63,33 @@
 }
 
 // от 768px
-// @media (min-width: $tablet-width) {
-//   .hero__list {
-//     grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
-//   }
+@media (min-width: $tablet-width) {
+  .hero__list {
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(334px, 1fr));
+  }
+}
 
-//   .hero__link svg {
-//     margin-right: 36px;
-//   }
+@media (min-width: $desktop-width) {
+  .hero__list {
+    padding: 0;
+    max-width: 1050px;
+  }
+}
 
-//   .hero__categotry {
-//     margin-left: 36px;
-//     display: block;
-//   }
+// .hero__link svg {
+//   margin-right: 36px;
 // }
 
-// @media (min-width: $desktop-width) {
-//   .hero {
-//     max-width: 1050px;
-//   }
+// .hero__categotry {
+//   margin-left: 36px;
+//   display: block;
 // }
-
+// }
 
 // .hero::before {
 //   width: 320px;
