@@ -1,39 +1,33 @@
 @use "../global/variables.scss" as *;
 
-.form__title {
-  margin: 0;
-  margin-bottom: 20px;
-  grid-area: product__week;
-  font-weight: 700;
-  font-size: 17px;
-  // line-height: 17px; 17/17=1
-  line-height: 1;
-  color: $color-green;
-  text-transform: uppercase;
+.main__order .container-color {
+  background-color: $color-white;
 }
 
-.form__text-additionally {
-  margin: 0;
-  width: 320px;
-  height: 52px;
-  display: block;
+.order {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+  outline: 2px solid #dda0dd;
+  outline-offset: -2px;
 }
 
-.form__button {
+.order__title {
   margin: 0;
-  width: 320px;
-  height: 52px;
-  display: block;
 }
 
-// от 768px
 @media (min-width: $tablet-width) {
+  .main__order .container-color {
+    background-color: $color-gray-fon;
+  }
+
   .form__fieldset {
+    height: 331px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .form__title {
+  .form__title-legend {
     grid-column: 1 / 2;
   }
 
