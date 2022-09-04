@@ -13,7 +13,7 @@
   }
 
   .navigation__usersub .navigation__item {
-    min-height: 89px;
+    min-height: 64px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -21,6 +21,7 @@
 
   .navigation__usersub-text {
     margin: 0;
+    // padding-top: 10px;
     display: block;
   }
 }

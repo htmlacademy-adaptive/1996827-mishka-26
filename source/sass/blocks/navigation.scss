@@ -35,7 +35,17 @@
   background-color: transparent;
 }
 
+.navigation__site-wrapper,
+.navigation__user-wrapper {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .navigation__site-wrapper,
+  .navigation__user-wrapper {
+    display: block;
+  }
+
   .navigation {
     // margin: 0;
     padding: 0;

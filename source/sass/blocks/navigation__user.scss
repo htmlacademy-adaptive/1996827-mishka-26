@@ -41,7 +41,7 @@
     }
 
     .navigation__link-search {
-      // width: 84px;
+      width: 58px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,6 +52,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .navigation__link-recycled p {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .navigation__link-recycled svg {
+      margin-right: 32px;
     }
 
     .navigation__text-search {
