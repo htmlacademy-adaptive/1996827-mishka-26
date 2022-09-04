@@ -9,7 +9,8 @@
 
 .contacts {
   margin: 0 auto;
-  margin-top: 100px;
+  // margin-top: 100px;
+  padding-top: 45px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -19,14 +20,17 @@
 
 .contacts__title {
   grid-area: contacts__title;
+  margin-bottom: 27px;
 }
 
 .contacts__address-wrapper {
+  margin-bottom: 33px;
   grid-area: contacts__address-wrapper;
 }
 
 .contacts__address {
   margin: 0;
+  padding-bottom: 30px;
   display: flex;
 }
 
@@ -60,7 +64,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 30px;
+    top: 21px;
     left: 0;
     right: 0;
     height: 1px;

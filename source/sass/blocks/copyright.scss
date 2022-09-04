@@ -5,10 +5,18 @@
   // margin: 0 auto;
   min-height: 80px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   // outline: 2px solid #dda0dd;
   background-color: #f1f1f1;
+}
+
+.copyright__title {
+  // padding-left: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
 }
 
 .copyright__list {
@@ -20,7 +28,7 @@
 
 .copyright__link {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 
   &:hover {
@@ -36,22 +44,23 @@
 }
 
 .copyright__link svg {
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
-// .copyright__title:hover + .copyright__link path {
-//   fill: $color-black;
-//   padding: 0;
+.copyright__title:hover + .copyright__link path {
+  fill: $color-black;
+  padding: 0;
+}
+
+// .copyright__title {
+//   &:hover + .copyright__link {
+//     path {
+//       fill: $color-green-dark;
+//     }
+//   }
+
+//   &:active + .copyright__link {
+//     @include active;
+//   }
 // }
 
-.copyright__title {
-  &:hover + .copyright__link {
-    path {
-      fill: $color-green-dark;
-    }
-  }
-
-  &:active + .copyright__link {
-    @include active;
-  }
-}
