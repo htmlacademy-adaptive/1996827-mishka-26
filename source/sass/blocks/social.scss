@@ -40,3 +40,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin: 0;
+    margin-top: -5px;
+  }
+}

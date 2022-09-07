@@ -64,3 +64,15 @@
 //   }
 // }
 
+@media (min-width: $tablet-width) {
+  .copyright__list {
+    width: 223px;
+    margin: 0;
+    margin-top: -4px;
+    justify-content: flex-end;
+  }
+
+  .copyright__link svg {
+    margin-left: 21px;
+  }
+}
