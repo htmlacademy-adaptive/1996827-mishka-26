@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .navigation__user .navigation__item {
@@ -29,6 +30,16 @@
   }
 }
 
+.navigation__user-search-icon {
+  position: absolute;
+  // top: 17px;
+  // left: 21px;
+  // width: 16px;
+  // height: 16px;
+  // opacity: 0.3;
+  // fill: #ffffff;
+}
+
 @media (min-width: $tablet-width) {
   .navigation__user {
     padding-right: max(50px, calc((100vw - 1050px) / 2));
@@ -41,7 +52,7 @@
     }
 
     .navigation__link-search {
-      width: 58px;
+      width: 82px;
       display: flex;
       justify-content: center;
       align-items: center;

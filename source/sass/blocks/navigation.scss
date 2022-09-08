@@ -35,37 +35,101 @@
   background-color: transparent;
 }
 
-.navigation__button-toggle::before {
+// navigation--closed
+.navigation--closed .navigation__button-toggle::before {
   width: 20px;
-  height: 14px;
+  height: 2px;
   position: absolute;
   content: "";
   top: 40%;
   right: 36%;
-  background-image: url("../img/icon/menu.svg");
-  background-repeat: no-repeat;
+  background-color: $color-black;
+  box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
 
   &:focus-visible {
     outline: 2px solid $color-green;
     border-radius: 3px;
   }
+
+  // ~ .navigation__site-wrapper,
+  // ~ .navigation__user-wrapper {
+  //   display: none;
+  // }
 }
 
-.navigation__button-toggle:active::before {
-  width: 20px;
-  height: 14px;
-  background-image: url("../img/icon/close.svg");
-  background-size: contain;
+// .navigation--closed ~ .navigation__site-wrapper,
+// .navigation--closed ~ .navigation__user-wrapper {
+//   display: none;
+// }
+
+// .navigation--opened
+.navigation--opened .navigation__button-toggle {
+  &::before,
+  &::after {
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    content: "";
+    top: 40%;
+    right: 36%;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($color-black, 30%);
+  }
 }
+
+// .navigation__button-toggle > .navigation__site-wrapper {
+//   display: none;
+// }
+
 
 // .navigation__site-wrapper,
 // .navigation__user-wrapper {
 //   display: none;
 // }
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__site {
+    .navigation__item {
+      display: none;
+
+      //add navigation__item--active in li
+      &--active {
+        display: flex;
+      }
+    }
+  }
+
+  .navigation--closed .navigation__user {
+    .navigation__item {
+      display: none;
+
+      //add navigation__item--active in li
+      &--active {
+        display: flex;
+      }
+    }
+  }
+}
 
 @media (min-width: $tablet-width) {
-  .navigation__site-wrapper,
-  .navigation__user-wrapper {
+  // .navigation__site-wrapper,
+  // .navigation__user-wrapper {
+  //   display: block;
+  // }
+  .navigation--closed ~ .navigation__site-wrapper,
+  .navigation--closed ~ .navigation__user-wrapper {
     display: block;
   }
 

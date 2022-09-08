@@ -27,15 +27,19 @@
     box-sizing: border-box;
 
     .navigation__item {
-      width: 167px;
+      // width: 167px;
+      min-width: 162px;
+      // min-width: 132px;
       min-height: 64px;
       justify-content: flex-start;
+      flex-wrap: nowrap;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__site-wrapper {
+    align-self: center;
     grid-area: navigation__site-wrapper;
     background-color: $color-white;
   }
