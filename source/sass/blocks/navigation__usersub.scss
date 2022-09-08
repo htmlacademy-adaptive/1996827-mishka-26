@@ -26,6 +26,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .navigation__usersub {
+    // margin: 0;
+    // padding: 0;
+    // min-height: 89px;
+    // width: 600px;
+    display: grid;
+    place-items: center end;
+  }
+}
+
 // @use "../global/variables" as *;
 
 
