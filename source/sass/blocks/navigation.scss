@@ -50,17 +50,7 @@
     outline: 2px solid $color-green;
     border-radius: 3px;
   }
-
-  // ~ .navigation__site-wrapper,
-  // ~ .navigation__user-wrapper {
-  //   display: none;
-  // }
 }
-
-// .navigation--closed ~ .navigation__site-wrapper,
-// .navigation--closed ~ .navigation__user-wrapper {
-//   display: none;
-// }
 
 // .navigation--opened
 .navigation--opened .navigation__button-toggle {
@@ -90,15 +80,6 @@
   }
 }
 
-// .navigation__button-toggle > .navigation__site-wrapper {
-//   display: none;
-// }
-
-
-// .navigation__site-wrapper,
-// .navigation__user-wrapper {
-//   display: none;
-// }
 @media (max-width: $mobile-width-only) {
   .navigation--closed .navigation__site {
     .navigation__item {

@@ -6,9 +6,26 @@
   justify-content: center;
 
   .navigation__item {
+    margin-left: 76px;
     min-height: 79px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
+  }
+}
+
+.navigation--opened .navigation__site {
+  margin: 0 -30px;
+  width: 100%;
+  position: absolute;
+  background-color: $color-white;
+  z-index: 2;
+
+  .navigation__item {
+    margin-left: 76px;
+    min-height: 79px;
+    display: flex;
+    // justify-content: center;
     align-items: center;
   }
 }
@@ -27,6 +44,7 @@
     box-sizing: border-box;
 
     .navigation__item {
+      margin-left: 0;
       // width: 167px;
       min-width: 162px;
       // min-width: 132px;
