@@ -30,6 +30,13 @@
   }
 }
 
+// .navigation--nojs
+.navigation--nojs .navigation__site {
+  position: static;
+  display: flex;
+  // display: block;
+}
+
 @media (min-width: $tablet-width) {
   .navigation__site-wrapper {
     grid-area: navigation__site-wrapper;
@@ -50,7 +57,7 @@
       // min-width: 132px;
       min-height: 64px;
       justify-content: flex-start;
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
     }
   }
 }
@@ -63,7 +70,8 @@
   }
 
   .navigation__site .navigation__item {
-    justify-content: flex-start;
-    align-items: center;
+    min-width: 167px;
+    // justify-content: flex-start;
+    // align-items: center;
   }
 }

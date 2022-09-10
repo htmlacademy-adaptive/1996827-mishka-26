@@ -10,7 +10,7 @@
   <header class="header">
     <nav class="header__navigation navigation">
 
-      <div class="navigation__logo-wrapper navigation--closed">
+      <div class="main-nav navigation__logo-wrapper navigation--closed navigation--nojs">
         <a class="navigation__logo-link" href="index.html" aria-label="Логотип интерне-магазина Mishka.">
           <img class="header__logo-img" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="">
         </a>
@@ -25,7 +25,7 @@
         </button>
       </div>
 
-      <div class="navigation__site-wrapper navigation--closed">
+      <div class="main-nav navigation__site-wrapper navigation--closed navigation--nojs">
         <ul class="navigation__site reset-list">
           <li class="navigation__item">
             <a class="link navigation__link" href="catalog.html">Каталог товаров</a>
@@ -47,7 +47,7 @@
         </ul>
       </div>
 
-      <div class="navigation__user-wrapper navigation--closed">
+      <div class="main-nav navigation__user-wrapper navigation--closed navigation--nojs">
         <ul class="navigation__user reset-list">
           <li class="navigation__item">
             <a class="link navigation__link navigation__link-search" href="#">
@@ -68,13 +68,11 @@
         </ul>
       </div>
 
-      <!-- <div class="navigation__usersub-wrapper"> -->
-        <ul class="navigation__usersub reset-list">
-          <li class="navigation__item">
-            <p class="navigation__usersub-text">Бесплатная доставка по России</p>
-          </li>
-        </ul>
-      <!-- </div> -->
+      <ul class="navigation__usersub reset-list">
+        <li class="navigation__item">
+          <p class="navigation__usersub-text">Бесплатная доставка по России</p>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -230,7 +228,7 @@
           </div>
 
           <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="../img/contacts/map-mobile1x1.png" width="320" height="455" alt="Как нас найти.">
+            <img class="contacts__map" src="./img/contacts/map-mobile1x1.png" width="320" height="455" alt="Как нас найти.">
           </div>
 
           <a class="contacts__button button">Напишите нам</a>
@@ -299,5 +297,7 @@
       </section>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
