@@ -13,12 +13,10 @@
   margin-left: 76px;
   min-height: 79px;
   display: flex;
-  // justify-content: center;
   align-items: center;
 }
 
 .navigation__user .navigation__link {
-  // width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +41,6 @@
     margin-left: 76px;
     min-height: 79px;
     display: flex;
-    // justify-content: center;
-    // justify-content: flex-start;
     align-items: center;
   }
 }
@@ -81,13 +77,9 @@
 
     .navigation__link-search {
       width: 82px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .navigation__link-recycled {
-      // width: 84px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -98,10 +90,6 @@
       font-size: 17px;
       line-height: 24px;
     }
-
-    // .navigation__link-recycled svg {
-    //   margin-right: 32px;
-    // }
 
     .navigation__user-search-icon {
       position: static;
@@ -115,7 +103,7 @@
     .navigation__user-cart-icon {
       position: static;
       left: 0;
-      margin-right: 20px;
+      margin-right: 31px;
     }
   }
 }

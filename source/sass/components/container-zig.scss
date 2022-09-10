@@ -19,3 +19,36 @@
     background-image: url("../img/icon/zigzag-line-mobile.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .container-zig-hero {
+    &::after {
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon/zigzag-line-tablet-while.svg");
+      z-index: 2;
+    }
+  }
+
+  .container-zig-product {
+    &::after {
+      width: 100%;
+      height: 17px;
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon/zigzag-line-tablet.svg");
+    }
+  }
+
+  .container-zig-reviews {
+    &::after {
+      width: 100%;
+      height: 17px;
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon/zigzag-line-tablet.svg");
+    }
+  }
+}

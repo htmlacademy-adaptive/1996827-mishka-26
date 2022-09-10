@@ -2,17 +2,14 @@
 @use "../global/mixins.scss" as *;
 
 .copyright {
-  // margin: 0 auto;
   min-height: 80px;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
-  // outline: 2px solid #dda0dd;
   background-color: #f1f1f1;
 }
 
 .copyright__title {
-  // padding-left: 50px;
+  margin-left: -1px;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -28,7 +25,6 @@
 
 .copyright__link {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
 
   &:hover {
@@ -44,7 +40,7 @@
 }
 
 .copyright__link svg {
-  margin-left: 25px;
+  margin-left: 28px;
 }
 
 .copyright__title:hover + .copyright__link path {
@@ -70,6 +66,10 @@
     margin: 0;
     margin-top: -4px;
     justify-content: flex-end;
+  }
+
+  .copyright__title {
+    margin-right: 4px;
   }
 
   .copyright__link svg {

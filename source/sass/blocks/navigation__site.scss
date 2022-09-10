@@ -9,7 +9,6 @@
     margin-left: 76px;
     min-height: 79px;
     display: flex;
-    // justify-content: center;
     align-items: center;
   }
 }
@@ -25,7 +24,6 @@
     margin-left: 76px;
     min-height: 79px;
     display: flex;
-    // justify-content: center;
     align-items: center;
   }
 }
@@ -34,7 +32,6 @@
 .navigation--nojs .navigation__site {
   position: static;
   display: flex;
-  // display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,12 +49,14 @@
 
     .navigation__item {
       margin-left: 0;
-      // width: 167px;
-      min-width: 162px;
-      // min-width: 132px;
+      width: 161px;
       min-height: 64px;
       justify-content: flex-start;
-      // flex-wrap: nowrap;
+    }
+
+    .navigation__link--knitting {
+      padding-top: 1px;
+      padding-left: 6px;
     }
   }
 }
@@ -71,7 +70,5 @@
 
   .navigation__site .navigation__item {
     min-width: 167px;
-    // justify-content: flex-start;
-    // align-items: center;
   }
 }

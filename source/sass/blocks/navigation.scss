@@ -28,7 +28,6 @@
 .navigation__button-toggle {
   min-width: 70px;
   min-height: 79px;
-  // margin-right: 30px;
   position: absolute;
   top: 0;
   right: 0;
@@ -37,15 +36,16 @@
 }
 
 // navigation--closed
+// бургер
 .navigation--closed .navigation__button-toggle::before {
   width: 20px;
   height: 2px;
   position: absolute;
   content: "";
   top: 40%;
-  right: 36%;
+  right: 44%;
   background-color: $color-black;
-  box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+  box-shadow: 0 6px 0 0 $color-black, 0 12px 0 0 $color-black;
 
   &:focus-visible {
     outline: 2px solid $color-green;
@@ -61,8 +61,8 @@
     height: 2px;
     position: absolute;
     content: "";
-    top: 45%;
-    right: 30%;
+    top: 40%;
+    right: 44%;
     background-color: $color-black;
   }
 
@@ -111,21 +111,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .navigation__site-wrapper,
-  // .navigation__user-wrapper {
-  //   display: block;
-  // }
   .navigation--closed ~ .navigation__site-wrapper,
   .navigation--closed ~ .navigation__user-wrapper {
     display: block;
   }
 
   .navigation {
-    // margin: 0;
     padding: 0;
     display: grid;
-    // place-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 372px 1fr;
     grid-template-rows: repeat(auto-fit, 89px);
     grid-template-areas:
       "header__logo-wrapper navigation__user"

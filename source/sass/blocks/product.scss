@@ -2,8 +2,7 @@
 
 .product {
   margin: 0 auto;
-  margin-bottom: 50px;
-  // outline: 2px solid #dda0dd;
+  margin-bottom: 36px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -96,6 +95,8 @@
 
 @media (min-width: $tablet-width) {
   .product {
+    margin-top: 44px;
+    margin-bottom: 52px;
     display: grid;
     place-items: center;
     grid-template-columns: 50% 25% 25%;
@@ -111,8 +112,6 @@
     margin: 0;
     padding: 0;
     padding-top: 10px;
-    // display: grid;
-    // place-items: start;
     width: 450px;
     height: 100px;
     display: block;
@@ -133,7 +132,6 @@
     width: 100px;
     height: 100px;
     text-align: center;
-    // display: flex;
     justify-content: center;
   }
 

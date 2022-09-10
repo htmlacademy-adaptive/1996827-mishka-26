@@ -2,9 +2,6 @@
 
 .hero {
   position: relative;
-  // position: absolute;
-  // content: "";
-  // margin-bottom: 50px;
   padding-bottom: 120px;
   background-image: url("../img/hero/hero-mobile2x1.png");
   background-repeat: no-repeat;
@@ -27,7 +24,7 @@
 
 .hero__item:nth-child(odd) {
   background-color: $color-green;
-  // padding: 0 -30px;
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -78,6 +75,7 @@
 
   .hero__list {
     padding: 0 50px;
+    margin-bottom: -13px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1150px;
@@ -105,48 +103,3 @@
   }
 }
 
-// .hero__link svg {
-//   margin-right: 36px;
-// }
-
-// .hero__categotry {
-//   margin-left: 36px;
-//   display: block;
-// }
-// }
-
-// .hero::before {
-//   width: 320px;
-//   height: 299px;
-//   position: absolute;
-//   left: -30px;
-//   content: "";
-//   display: block;
-//   background-image: url("../../../img/mobile-hero.png");
-//   background-repeat: no-repeat;
-//   z-index: -1;
-// }
-
-// стили для планшета 768px
-// @media (min-width: $tablet-width) {
-//   .hero::before {
-//     width: 768px;
-//     height: 746px;
-//     top: -86px;
-//     left: -50px;
-//     background-image: url("../../img/tablet-hero.png");
-//     background-repeat: no-repeat;
-//   }
-
-//   .hero::after {
-//     width: 768px;
-//     height: 24px;
-//     position: absolute;
-//     content: "";
-//     bottom: -12px;
-//     left: -50px;
-//     display: block;
-//     background-image: url("../../../img/icon-zigzag-fill.svg");
-//     background-repeat: no-repeat;
-//   }
-// }
