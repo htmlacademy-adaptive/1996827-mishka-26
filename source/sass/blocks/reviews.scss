@@ -27,6 +27,10 @@
   color: $color-gray;
 }
 
+.br1 {
+  display: none;
+}
+
 .reviews__quote-text {
   display: inline-block;
 }
@@ -108,8 +112,11 @@
     line-height: 30px;
   }
 
-  .reviews__quote-text {
-    display: inline;
+  // .reviews__quote-text {
+  //   display: inline;
+  // }
+  br {
+    display: none;
   }
 
   .reviews__author {
@@ -169,15 +176,14 @@
 
   .reviews__quote {
     // margin: 0;
+    min-width: 100%;
     margin-bottom: 44px;
     padding: 0;
     width: 875px;
     display: inline-block;
   }
 
-  .reviews__quote-text {
-    margin: 0;
-    padding: 0;
+  .br3 {
     display: inline-block;
   }
 
