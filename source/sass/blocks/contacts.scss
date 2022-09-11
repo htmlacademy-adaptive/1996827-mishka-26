@@ -9,15 +9,12 @@
 
 .contacts {
   margin: 0 auto;
-  // margin-top: 100px;
   padding-top: 44px;
   margin-left: -1px;
-  // margin-right: 2px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
-  // outline: 2px solid #dda0dd;
 }
 
 .contacts__title {
@@ -87,6 +84,7 @@
   margin: 0 -30px;
   margin-bottom: 40px;
   grid-area: contacts__map-wrapper;
+  position: relative;
 }
 
 .contacts__button {
@@ -143,6 +141,27 @@
 
   .contacts__map-wrapper {
     margin-bottom: 55px;
+    position: relative;
+
+    &::before {
+      width: 67px;
+      height: 100px;
+      position: absolute;
+      content: "";
+      top: 34%;
+      left: 41%;
+      background-image: url("../img/icon/map-marker.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+
+  .contacts__map {
+    border: none;
+    display: block;
+    position: relative;
   }
 
   .contacts__button {
@@ -155,10 +174,6 @@
 
 //1050
 @media (min-width: $desktop-width) {
-  // .contacts {
-  //   margin-left: 175px;
-  // }
-
   .contacts {
     max-width: 1050px;
     margin-left: 174px;
@@ -174,14 +189,8 @@
   }
 
   .contacts__title {
-    // padding-top: 30px;
     margin-top: 20px;
     margin-bottom: -45px;
-    // margin-bottom: 0;
-    // padding-bottom: 0;
-    // margin: 0;
-    // padding: 0;
-    // margin-bottom: 10px;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
@@ -190,13 +199,6 @@
   .contacts__address-wrapper {
     margin: 0;
     padding: 0;
-    // width: 327px;
-    // min-height: 200px;
-    // margin-top: 10px;
-    // margin-bottom: 20px;
-    // padding-top: 10px;
-    // margin-bottom: 0;
-    // padding-bottom: 0;
     display: flex;
     flex-direction: column;
   }
@@ -208,7 +210,6 @@
   }
 
   .contacts__button {
-    // margin-top: -30px;
     position: relative;
     top: -30px;
     left: -108px;

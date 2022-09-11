@@ -10,6 +10,17 @@
     grid-area: navigation__usersub;
     padding-right: max(50px, calc((100vw - 1050px) / 2));
     background-color: $color-gray-fon;
+    position: relative;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: "";
+      top: 0;
+      border-top: 1px solid #e5e5e5;
+      z-index: 20;
+    }
   }
 
   .navigation__usersub .navigation__item {

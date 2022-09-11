@@ -1,4 +1,5 @@
 @use "../global/variables.scss" as *;
+@use "../global/mixins.scss" as *;
 
 .reviews {
   margin: 0 auto;
@@ -77,6 +78,15 @@
     transform: rotate(180deg);
     justify-self: flex-end;
   }
+
+  // тест миксина
+  &:hover {
+    @include hover;
+  }
+
+  &:active {
+    @include active;
+  }
 }
 
 .reviews__button-write {
@@ -112,9 +122,6 @@
     line-height: 30px;
   }
 
-  // .reviews__quote-text {
-  //   display: inline;
-  // }
   br {
     display: none;
   }
@@ -168,14 +175,12 @@
 
   .reviews__title {
     margin-bottom: 12px;
-    // padding-bottom: 2px;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__quote {
-    // margin: 0;
     min-width: 100%;
     margin-bottom: 44px;
     padding: 0;

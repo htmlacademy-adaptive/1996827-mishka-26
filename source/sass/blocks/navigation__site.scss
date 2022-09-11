@@ -38,6 +38,16 @@
   .navigation__site-wrapper {
     grid-area: navigation__site-wrapper;
     background-color: $color-gray-fon;
+    position: relative;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: "";
+      border-top: 1px solid #e5e5e5;
+      z-index: 20;
+    }
   }
 
   .navigation__site {
@@ -66,6 +76,16 @@
     align-self: center;
     grid-area: navigation__site-wrapper;
     background-color: $color-white;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      border-top: 1px solid #e5e5e5;
+      z-index: 20;
+    }
   }
 
   .navigation__site {
@@ -77,6 +97,20 @@
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
+    }
+  }
+
+  .navigation__item--catalog {
+    position: relative;
+
+    &::before {
+      height: 89px;
+      width: 1px;
+      position: absolute;
+      content: "";
+      right: 25px;
+      border-right: 1px solid #e5e5e5;
+      z-index: 0;
     }
   }
 }

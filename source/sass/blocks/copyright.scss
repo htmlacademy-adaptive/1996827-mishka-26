@@ -79,13 +79,10 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
-    // justify-content: center;
-    // margin-left: 64px;
     justify-content: flex-end;
   }
 
   .copyright__title {
-    // margin: 0;
     margin-right: 8px;
   }
 }
