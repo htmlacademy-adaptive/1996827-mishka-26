@@ -107,3 +107,24 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation__user {
+    justify-content: flex-end;
+
+    .navigation__link-search {
+      // margin-left: 20px;
+      justify-content: flex-start;
+    }
+
+    // .navigation__user-search-icon {
+    //   position: relative;
+    //   content: "";
+    //   left: 782px;
+    // }
+
+    .navigation__user-cart-icon {
+      margin-right: 32px;
+    }
+  }
+}

@@ -141,3 +141,53 @@
     justify-self: end;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin-left: 175px;
+    padding-bottom: 155px;
+
+    &::after {
+      width: 1050px;
+      height: 23px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -175px;
+      background-image: url("../img/icon/zigzag-line-desktop.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .reviews__title {
+    margin-bottom: 12px;
+    // padding-bottom: 2px;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__quote {
+    // margin: 0;
+    margin-bottom: 44px;
+    padding: 0;
+    width: 875px;
+    display: inline-block;
+  }
+
+  .reviews__quote-text {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .reviews__author {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .reviews__button-write {
+    margin-top: 6px;
+  }
+}

@@ -46,3 +46,10 @@
     margin-top: -5px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    // justify-content: center;
+    margin-left: 64px;
+  }
+}

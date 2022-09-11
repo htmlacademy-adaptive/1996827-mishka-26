@@ -68,7 +68,15 @@
     background-color: $color-white;
   }
 
-  .navigation__site .navigation__item {
-    min-width: 167px;
+  .navigation__site {
+    .navigation__item {
+      min-width: 214px;
+    }
+
+    .navigation__link {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+    }
   }
 }

@@ -210,7 +210,24 @@
   }
 
   .about {
+    margin-left: 175px;
     max-width: 1050px;
     grid-template-columns: 1050px;
+  }
+
+  .about__list {
+    column-gap: 55px;
+  }
+
+  .about__title {
+    // margin: 0;
+    padding-top: 0;
+    // padding: 0;
+    // padding-bottom: 15px;
+    // .about__title {
+    //   padding-top: 52px;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

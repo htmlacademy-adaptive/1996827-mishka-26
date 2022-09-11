@@ -201,6 +201,8 @@
 
 @media (min-width: $desktop-width) {
   .product {
+    padding-bottom: 95px;
+    margin-bottom: 30px;
     max-width: 1050px;
     grid-template-columns: 133px 292px 1fr;
     column-gap: 50px;
@@ -210,20 +212,73 @@
       "product__week product__features product__images"
       "product__week product__priсe product__images"
       "product__week product__button product__images";
+
+    &::after {
+      width: 100%;
+      height: 23px;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      background-image: url("../img/icon/zigzag-line-desktop.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .product__week {
     margin: 0;
-    min-height: 360px;
-    align-items: flex-start;
+    margin-left: 29px;
+    padding: 0;
+    min-height: 452px;
+    // display: grid;
+    // place-content: start satrt;
+    // place-self: start satrt;
+    // align-items: flex-start;
+    // position: absolute;
+    // top: -120px;
+    // left: 15px;
   }
 
   .product__title {
+    margin-top: 96px;
+    margin-left: -8px;
     width: 545px;
     display: block;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
     z-index: 2;
+  }
+
+  .product__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    margin-left: -7px;
+    margin-bottom: 60px;
+  }
+
+  .product__features {
+    margin: 0;
+    padding: 0;
+    margin-left: -7px;
+    // margin-top: 50px;
+    margin-bottom: 124px;
+    // justify-self: start;
+    // align-self: flex-start;
+    // width: 292px;
+    // height: 100px;
+    // display: block;
+  }
+
+  .product__priсe {
+    margin-left: -7px;
+  }
+
+  .product__button {
+    margin-left: -7px;
+  }
+
+  .container-zig-product {
+    margin-bottom: 68px;
   }
 }
