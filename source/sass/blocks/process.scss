@@ -46,8 +46,6 @@
   .process {
     max-width: 1050px;
     display: grid;
-    // grid-template-columns: minmax(440px, 1fr) minmax(262px, 1fr) minmax(348px, 1fr);
-    // grid-template-rows: repeat(4, min-content);
     grid-template-rows: minmax(195px, 455px) min-content 1fr min-content;
     // place-items: center;
     grid-template-areas:

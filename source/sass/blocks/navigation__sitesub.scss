@@ -30,10 +30,16 @@
     box-sizing: border-box;
 
     .navigation__item {
-      width: 167px;
-      min-height: 89px;
+      width: 219px;
+      min-height: 62px;
       display: flex;
       justify-content: flex-start;
+    }
+
+    .navigation__link {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }

@@ -6,17 +6,48 @@
   justify-content: center;
 
   .navigation__item {
+    margin-left: 76px;
     min-height: 79px;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
+}
+
+.navigation--opened .navigation__site {
+  margin: 0 -30px;
+  width: 100%;
+  position: absolute;
+  background-color: $color-white;
+  z-index: 2;
+
+  .navigation__item {
+    margin-left: 76px;
+    min-height: 79px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .navigation--nojs
+.navigation--nojs .navigation__site {
+  position: static;
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
   .navigation__site-wrapper {
     grid-area: navigation__site-wrapper;
     background-color: $color-gray-fon;
+    position: relative;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: "";
+      border-top: 1px solid #e5e5e5;
+      z-index: 20;
+    }
   }
 
   .navigation__site {
@@ -27,21 +58,59 @@
     box-sizing: border-box;
 
     .navigation__item {
-      width: 167px;
-      min-height: 89px;
+      margin-left: 0;
+      width: 161px;
+      min-height: 64px;
       justify-content: flex-start;
+    }
+
+    .navigation__link--knitting {
+      padding-top: 1px;
+      padding-left: 6px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__site-wrapper {
+    align-self: center;
     grid-area: navigation__site-wrapper;
     background-color: $color-white;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      border-top: 1px solid #e5e5e5;
+      z-index: 20;
+    }
   }
 
-  .navigation__site .navigation__item {
-    justify-content: flex-start;
-    align-items: center;
+  .navigation__site {
+    .navigation__item {
+      min-width: 214px;
+    }
+
+    .navigation__link {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+
+  .navigation__item--catalog {
+    position: relative;
+
+    &::before {
+      height: 89px;
+      width: 1px;
+      position: absolute;
+      content: "";
+      right: 25px;
+      border-right: 1px solid #e5e5e5;
+      z-index: 0;
+    }
   }
 }

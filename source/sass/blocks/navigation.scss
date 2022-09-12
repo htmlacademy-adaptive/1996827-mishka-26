@@ -13,25 +13,114 @@
   grid-area: header__logo-wrapper;
   display: grid;
   place-items: center;
+  position: relative;
+}
+
+.header__logo-img {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__button-toggle {
-  min-width: 40px;
-  margin-left: auto;
-  display: block;
+  min-width: 70px;
+  min-height: 79px;
   position: absolute;
-  right: 30px;
+  top: 0;
+  right: 0;
   border: none;
   background-color: transparent;
 }
 
+// navigation--closed
+// бургер
+.navigation--closed .navigation__button-toggle::before {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  top: 40%;
+  right: 44%;
+  background-color: $color-black;
+  box-shadow: 0 6px 0 0 $color-black, 0 12px 0 0 $color-black;
+
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    border-radius: 3px;
+  }
+}
+
+// .navigation--opened
+.navigation--opened .navigation__button-toggle {
+  &::before,
+  &::after {
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    content: "";
+    top: 40%;
+    right: 44%;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($color-black, 30%);
+  }
+}
+
+// .navigation--nojs
+// .navigation--nojs .navigation__button-toggle {
+//   display: none;
+// }
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__site {
+    .navigation__item {
+      display: none;
+
+      // add navigation__item--active in li
+      &--active {
+        display: flex;
+      }
+    }
+  }
+
+  .navigation--closed .navigation__user {
+    .navigation__item {
+      display: none;
+
+      // add navigation__item--active in li
+      &--active {
+        display: flex;
+      }
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .navigation--closed ~ .navigation__site-wrapper,
+  .navigation--closed ~ .navigation__user-wrapper {
+    display: block;
+  }
+
   .navigation {
-    // margin: 0;
     padding: 0;
     display: grid;
-    // place-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 372px 1fr;
     grid-template-rows: repeat(auto-fit, 89px);
     grid-template-areas:
       "header__logo-wrapper navigation__user"

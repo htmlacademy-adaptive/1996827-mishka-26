@@ -3,14 +3,17 @@
 @use "./global/fonts.scss";
 @use "./global/base-styles.scss";
 @use "./global/utils.scss";
+@use "./global/mixins.scss";
 
 // components
 @use "./components/title.scss";
 @use "./components/button.scss";
 @use "./components/form.scss";
 @use "./components/link.scss";
+@use "./components/label.scss";
 @use "./components/container.scss";
 @use "./components/container-color.scss";
+@use "./components/container-zig.scss";
 
 // blocks
 
@@ -39,4 +42,3 @@
 
 // form
 @use "./blocks/order.scss";
-
