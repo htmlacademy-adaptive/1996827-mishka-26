@@ -17,6 +17,7 @@
       <div class="main-nav navigation__logo-wrapper navigation--closed navigation--nojs">
 
         <!-- кадрирование логотипа -->
+        <!-- retina -->
         <!-- aria-label="Логотип интернет-магазина Mishka." -->
         <a class="navigation__logo-link" href="/">
           <picture>
@@ -154,8 +155,14 @@
             </div>
           </dl>
 
-          <div class="product__images">
-            <img src="./img/product/knitted_baskets.png" width="260" height="315" alt="Вязаные корзинки.">
+          <div class="product__images-wrapper">
+            <!-- retina -->
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/catalog/knitted_baskets-desktop.png 1x, ./img/catalog/knitted_baskets-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/catalog/knitted_baskets-tablet.png 1x, ./img/catalog/knitted_baskets-tablet@2x.png 2x">
+              <source media="(min-width: 320px)" srcset="./img/catalog/knitted_baskets-mobile.png 1x, ./img/catalog/knitted_baskets-mobile@2x.png 2x">
+              <img class="product__images" src="./img/product/knitted_baskets-mobile.png" width="260" height="315" alt="Три вязаные корзинки.">
+            </picture>
           </div>
 
           <p class="product__priсe">Цена: 990 руб.</p>
