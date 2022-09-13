@@ -15,8 +15,16 @@
     <nav class="header__navigation navigation">
 
       <div class="main-nav navigation__logo-wrapper navigation--closed navigation--nojs">
-        <a class="navigation__logo-link" href="index.html" aria-label="Логотип интерне-магазина Mishka.">
-          <img class="header__logo-img" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="">
+
+        <!-- кадрирование логотипа -->
+        <!-- aria-label="Логотип интернет-магазина Mishka." -->
+        <a class="navigation__logo-link" href="/">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/logo/mishka-desktop-header.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo/mishka-tablet-header.svg">
+            <source media="(min-width: 320px)" srcset="./img/logo/mishka-mobile-header.svg">
+            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
+          </picture>
         </a>
 
         <button class="navigation__button-toggle" type="button">
@@ -88,8 +96,6 @@
         <div class="container">
           <section class="main__hero hero">
             <h2 class="hero__title title">Милые штуки ручной<br> работы для дома</h2>
-
-            <!-- <img class="hero__img" src="../../../img/mobile-hero.png" alt="Общая картинка продуктов."> -->
           </section>
         </div>
 
@@ -232,9 +238,8 @@
 
           <div class="contacts__map-wrapper">
             <!-- <img class="contacts__map" src="./img/contacts/map-mobile1x1.png" width="320" height="455" alt="Как нас найти."> -->
-            <iframe class="contacts__map "
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            title="Как нас найти." width="100%" height="454" allowfullscreen>
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            title="Как нас найти." width="500" height="454" allowfullscreen>
           </iframe>
           </div>
 

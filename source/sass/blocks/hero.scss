@@ -3,9 +3,15 @@
 .hero {
   position: relative;
   padding-bottom: 120px;
-  background-image: url("../img/hero/hero-mobile2x1.png");
+  background-image: url("../img/hero/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% -17px;
+
+  // retina
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .hero__title {
@@ -63,6 +69,17 @@
 
 // от 768px
 @media (min-width: $tablet-width) {
+  .hero {
+    background-image: url("../img/hero/hero-desktop.png");
+    background-position: 50% -65px;
+
+    // retina
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-desktop@2x.png");
+      background-size: 768px auto;
+    }
+  }
+
   .hero__title {
     padding-top: 90px;
     margin-bottom: 253px;

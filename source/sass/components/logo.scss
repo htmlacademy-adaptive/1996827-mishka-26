@@ -1,0 +1,27 @@
+@use "../global/variables.scss" as *;
+
+.logo {
+  display: block;
+  background-color: transparent;
+
+  &:hover {
+    opacity: var($opacity-hover);
+  }
+
+  &:active {
+    opacity: var($opacity-active);
+  }
+
+  &--footer {
+    color: var($color-black);
+  }
+
+  &--footer:hover {
+    color: var($color-green-dark);
+  }
+
+  &--footer:active {
+    color: var($color-green-dark);
+    opacity: var($opacity-active);
+  }
+}
