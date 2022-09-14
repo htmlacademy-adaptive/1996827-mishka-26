@@ -1,0 +1,10 @@
+{
+  "icons": [
+    { "src": "./source/img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./source/img/favicons/512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "name": "Магазин домашнего уюта Мишка",
+  "short_name": "Мишка",
+  "description": "Магазин, где можно уютно обустроить ваш дом"
+}
+

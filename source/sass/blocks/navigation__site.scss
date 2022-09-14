@@ -64,10 +64,10 @@
       justify-content: flex-start;
     }
 
-    .navigation__link--knitting {
-      padding-top: 1px;
-      padding-left: 6px;
-    }
+    // .navigation__link--knitting {
+    //   padding-top: 1px;
+    //   padding-left: 6px;
+    // }
   }
 }
 
@@ -90,7 +90,8 @@
 
   .navigation__site {
     .navigation__item {
-      min-width: 214px;
+      // min-width: 214px;
+      min-width: 219px;
     }
 
     .navigation__link {

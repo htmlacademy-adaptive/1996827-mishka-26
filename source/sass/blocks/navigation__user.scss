@@ -79,7 +79,8 @@
     .navigation__item--search {
       border-left: 1px solid #e5e5e5;
       border-right: 1px solid #e5e5e5;
-      margin-right: 42px;
+      // margin-right: 42px;
+      // margin-right: 40px;
     }
 
     .navigation__link-search {
@@ -129,6 +130,13 @@
 
     .navigation__user-cart-icon {
       margin-right: 32px;
+    }
+
+    .navigation__item--search {
+      // border-left: 1px solid #e5e5e5;
+      // border-right: 1px solid #e5e5e5;
+      margin-right: 42px;
+      // margin-right: 40px;
     }
   }
 }
