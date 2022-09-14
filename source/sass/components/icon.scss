@@ -1,0 +1,29 @@
+@use "../global/variables.scss" as *;
+
+.link {
+  fill: rgba($color-black, 0.2);
+
+  &:hover {
+    fill: rgba($color-green-dark, 1);
+
+    path {
+      fill: rgba($color-green-dark, 1);
+    }
+
+    polygon {
+      fill: rgba($color-green-dark, 1);
+    }
+  }
+
+  &:active {
+    fill: rgba($color-black, 0.6);
+
+    path {
+      fill: rgba($color-black, 0.6);
+    }
+
+    polygon {
+      fill: rgba($color-black, 0.6);
+    }
+  }
+}
