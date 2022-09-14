@@ -23,7 +23,6 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/logo/mishka-desktop-header.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/mishka-tablet-header.svg">
-            <source media="(min-width: 320px)" srcset="./img/logo/mishka-mobile-header.svg">
             <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
           </picture>
         </a>
@@ -156,12 +155,11 @@
           </dl>
 
           <div class="product__images-wrapper">
-            <!-- retina -->
+            <!-- retina  кадрирование -->
             <picture>
               <source media="(min-width: 1150px)" srcset="./img/catalog/knitted_baskets-desktop.png 1x, ./img/catalog/knitted_baskets-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="./img/catalog/knitted_baskets-tablet.png 1x, ./img/catalog/knitted_baskets-tablet@2x.png 2x">
-              <source media="(min-width: 320px)" srcset="./img/catalog/knitted_baskets-mobile.png 1x, ./img/catalog/knitted_baskets-mobile@2x.png 2x">
-              <img class="product__images" src="./img/product/knitted_baskets-mobile.png" width="260" height="315" alt="Три вязаные корзинки.">
+              <img class="product__images" src="./img/product/knitted_baskets-mobile.png" srcset="./img/catalog/knitted_baskets-mobile@2x.png 2x" width="260" height="315" alt="Три вязаные корзинки.">
             </picture>
           </div>
 
