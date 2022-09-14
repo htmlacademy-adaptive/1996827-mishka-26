@@ -27,10 +27,10 @@
   display: flex;
   align-items: center;
 
+  fill: rgba(99, 209, 187, 1);
+
   &:hover {
-    path {
-      fill: $color-green-dark;
-    }
+    fill: rgba(99, 209, 187, 0.5);
   }
 
   // тест миксина
@@ -43,7 +43,7 @@
   margin-left: 28px;
 }
 
-.copyright__title:hover + .copyright__link path {
+.copyright__title:hover + .copyright__link {
   fill: $color-black;
   padding: 0;
 }

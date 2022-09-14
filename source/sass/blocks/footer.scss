@@ -25,10 +25,9 @@
     display: block;
   }
 
+  // тест миксина
   &:hover {
-    path {
-      fill: $color-green-dark;
-    }
+    @include hover;
   }
 
   // тест миксина
