@@ -21,12 +21,18 @@
   justify-content: center;
   align-items: center;
 
-  &:hover {
-    path {
-      fill: $color-green-dark;
-      opacity: 1;
-    }
-  }
+  // цвет инлайновой svg
+  // &:hover {
+  //   path {
+  //     fill: rgba($color-green-dark, 1);
+  //     opacity: 1;
+  //   }
+  // }
+  // &:active {
+  //   path {
+  //     fill: rgba($color-black, 0.6);
+  //   }
+  // }
 }
 
 .navigation--opened .navigation__user {
