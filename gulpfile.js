@@ -12,6 +12,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import gulpCheerio from 'gulp-cheerio';
 
 // 1 найти файлы
 // 2 действие над файлами
@@ -97,15 +98,26 @@ export const svg = (done) => {
     done();
 };
 
-// export const sprite = () => {
-//   return gulp.src('source/img/sprites/*.svg')
-//     .pipe(svgo())
-//     .pipe(svgstore( {
-//       inlineSvg: true
-//     }))
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest('build/img'));
-// };
+// Sprite
+
+export const sprite = () => {
+  return gulp.src('source/img/sprites/*.svg')
+      .pipe(gulpCheerio({
+        run: function ($) {
+          $('[fill]').removeAttr('fill');
+          $('[opacity]').removeAttr('opacity');
+          $('[fill-rule]').removeAttr('fill-rule');
+          $('[clip-rule]').removeAttr('clip-rule');
+        },
+        parserOptions: { xmlMode: true }
+      }))
+    .pipe(svgo())
+    .pipe(svgstore( {
+      inlineSvg: true
+    }))
+    .pipe(rename('sprites.svg'))
+    .pipe(gulp.dest('build/img'));
+};
 
 // Copy
 
@@ -114,7 +126,7 @@ const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/manifest.webmanifest',
-    'source/img/sprites.svg',
+    // 'source/img/sprites.svg',
     ], {
       base: 'source'
     })
@@ -169,7 +181,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    // sprite,
+    sprite,
     createWebp
   )
 );
@@ -185,7 +197,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    // sprite,
+    sprite,
     createWebp
   ),
   gulp.series(
