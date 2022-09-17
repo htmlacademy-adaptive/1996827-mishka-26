@@ -28,10 +28,6 @@
   color: $color-gray;
 }
 
-.br1 {
-  display: none;
-}
-
 .reviews__quote-text {
   display: inline-block;
 }
@@ -55,7 +51,7 @@
 }
 
 .reviews__button-wrapper {
-  min-width: 260px;
+  width: 260px;
   margin-bottom: 38px;
   grid-area: reviews__button-wrapper;
   display: grid;
@@ -64,7 +60,7 @@
 
 .reviews__button {
   padding: 0;
-  width: 100%;
+  min-width: 100%;
   min-height: 52px;
   position: relative;
   background-image: url("../img/icon/arrow.svg");
@@ -80,13 +76,13 @@
   }
 
   // тест миксина
-  &:hover {
-    @include hover;
-  }
+  // &:hover {
+  //   @include hover;
+  // }
 
-  &:active {
-    @include active;
-  }
+  // &:active {
+  //   @include active;
+  // }
 }
 
 .reviews__button-write {
@@ -104,6 +100,17 @@
       "reviews__list reviews__button-wrapper"
       "reviews__list reviews__button-wrapper";
     row-gap: 25px;
+
+    &::before {
+      width: 350px;
+      height: 457px;
+      position: absolute;
+      content: "";
+      top: -80px;
+      left: -50px;
+      background-image: url("../img/reviews/reviews.jpg");
+      z-index: -1;
+    }
   }
 
   .reviews__title {
@@ -122,7 +129,7 @@
     line-height: 30px;
   }
 
-  br {
+  .br1 {
     display: none;
   }
 
@@ -135,21 +142,17 @@
 
   .reviews__button-wrapper {
     margin: 0;
-    min-width: 135px;
-    margin-right: 20px;
+    width: 176px;
     margin-bottom: 30px;
     justify-self: flex-end;
     align-self: flex-end;
   }
 
   .reviews__button {
-    max-width: 50px;
     border: none;
   }
 
   .reviews__button-write {
-    // padding-top: 6px;
-    // padding-left: 2px;
     min-width: 175px;
     align-self: flex-start;
     justify-self: end;
@@ -171,6 +174,11 @@
       background-image: url("../img/icon/zigzag-line-desktop.svg");
       background-repeat: no-repeat;
     }
+
+    &::before {
+      top: -70px;
+      left: -176px;
+    }
   }
 
   .reviews__title {
@@ -188,7 +196,7 @@
     display: inline-block;
   }
 
-  .br3 {
+  .br2 {
     display: inline-block;
   }
 
@@ -199,6 +207,6 @@
   }
 
   .reviews__button-write {
-    margin-top: 6px;
+    margin-top: 8px;
   }
 }

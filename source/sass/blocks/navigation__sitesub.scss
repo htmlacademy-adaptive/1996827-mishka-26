@@ -37,6 +37,9 @@
     }
 
     .navigation__link {
+      min-height: 64px;
+      display: grid;
+      place-items: center;
       font-weight: 700;
       font-size: 15px;
       line-height: 24px;

@@ -57,6 +57,7 @@
   font-weight: 700;
   color: $color-white;
   text-decoration: none;
+  outline: none;
 }
 
 .hero__categotry {
@@ -67,7 +68,6 @@
   padding-right: 5px;
 }
 
-// от 768px
 @media (min-width: $tablet-width) {
   .hero {
     background-image: url("../img/hero/hero-desktop.png");
@@ -101,7 +101,6 @@
   }
 
   .hero__link {
-    min-height: 119px;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -119,14 +118,9 @@
   }
 
   .hero__title {
-    padding-top: 94px;
-    margin-bottom: 253px;
+    padding-top: 92px;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .hero__list {
-    margin-bottom: -19px;
   }
 }

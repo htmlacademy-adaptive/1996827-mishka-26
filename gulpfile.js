@@ -5,14 +5,13 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-// import htmlmin from 'gulp-htmlmin';
+import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
-// import gulpCheerio from 'gulp-cheerio';
 
 // 1 найти файлы
 // 2 действие над файлами
@@ -38,13 +37,9 @@ export const styles = () => { // имя
 
 // HTML
 
-// export const html = () => {
-//   return gulp.src('source/*.html')
-//     .pipe(htmlmin({ collapseWhitespace: true }))
-//     .pipe(gulp.dest('build'));
-// };
 export const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 };
 
@@ -58,21 +53,21 @@ const scripts = () => {
 
 // Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 };
 
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 };
 
 // WebP
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(
     squoosh({
@@ -91,7 +86,7 @@ export const createWebp = () => {
 //     .pipe(svgo())
 //     .pipe(gulp.dest('build/img'));
 // }
-export const svg = (done) => {
+const svg = (done) => {
   gulp.src(['source/img/*/*.svg', '!source/img/icon/sprites/*.svg', '!source/img/sprites.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
@@ -136,7 +131,7 @@ const copy = (done) => {
 
 // Clean
 
-const clean = (done) => {
+export const clean = (done) => {
   return del('build/*');
 };
 
@@ -183,6 +178,10 @@ export const build = gulp.series(
     svg,
     // sprite,
     createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
   )
 );
 

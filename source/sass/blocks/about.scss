@@ -173,6 +173,16 @@
       padding-top: 32px;
     }
 
+    &--ball::before {
+      top: -21px;
+      left: 3px;
+    }
+
+    &--rocket::before {
+      top: -21px;
+      left: -6px;
+    }
+
     &--heart {
       padding-top: 0;
     }
