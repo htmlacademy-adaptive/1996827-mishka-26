@@ -37,6 +37,8 @@
 @use "./blocks/copyright.scss";
 
 // catalog
+@use "./blocks/main-catalog.scss";
+@use "./blocks/header-catalog.scss";
 @use "./blocks/catalog.scss";
 @use "./blocks/process.scss";
 
