@@ -1,0 +1,148 @@
+@use "../global/global.scss";
+
+.product-order {
+  padding: 30px 30px 46px;
+  background-color: var(--color-white);
+  box-shadow: var(--modal-shadow);
+  position: relative;
+
+  @media (min-width: global.$tablet-width) {
+    padding: 30px 108px 46px;
+  }
+}
+
+.product-order__title {
+  margin: 0;
+  margin-bottom: 18px;
+  position: relative;
+
+  @include global.fonter(700, 25px, 30px);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-black);
+
+  @media (min-width: global.$tablet-width) {
+    @include global.fonter(700, 30px, 57px);
+  }
+}
+
+.close-button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: rgba(0, 0, 0);
+}
+
+.close-button svg {
+  fill: rgba(0, 0, 0);
+}
+
+.close-button svg:hover {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.close-button svg:active {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.close-button:focus-within {
+  outline: 2px solid var(--basic-purple);
+}
+
+.product-order__message {
+  margin: 0;
+  margin-bottom: 22px;
+
+  @include global.fonter(400, 15px, 30px);
+  text-align: center;
+}
+
+.product-order__size-choser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 31px;
+  padding: 0;
+  border: none;
+}
+
+.product-order__label {
+  flex-grow: 1;
+  display: flex;
+}
+
+.product-order__input {
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  flex-grow: 1;
+  appearance: none;
+  margin: 0;
+  width: 38px;
+  height: 38px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font: inherit;
+  color: var(--color-gray);
+  background-color: transparent;
+  border: 2px solid #4444441a;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    @include global.fonter(700, 17px, 17px);
+  }
+
+  &:hover {
+    border: 2px solid var(--color-green);
+  }
+
+  &:checked {
+    border: 2px solid var(--color-green);
+  }
+
+  &:active {
+    border: 2px solid var(--color-black);
+  }
+
+  &--size-s {
+    &::before {
+      content: "S";
+    }
+  }
+
+  &--size-m {
+    &::before {
+      content: "M";
+    }
+  }
+
+  &--size-l {
+    &::before {
+      content: "L";
+    }
+  }
+}
+
+// window
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white-light);
+
+  &--close {
+    display: none;
+  }
+}

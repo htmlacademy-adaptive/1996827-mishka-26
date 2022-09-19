@@ -306,6 +306,40 @@
     </div>
   </footer>
 
+
+  <div class="modal modal--close">
+    <div class="modal__message">
+      <section class="product-order">
+        <h2 class="product-order__title">Добавить в корзину</h2>
+        <button class="close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" />
+          </svg>
+        </button>
+        <p class="product-order__message">Выберите размер:</p>
+        <form class="product-order__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="product-order__size-choser">
+            <legend class="visually-hidden">Варианты размеров:</legend>
+            <label class="product-order__label">
+              <span class="visually-hidden">Размер S</span>
+              <input class="product-order__input product-order__input--size-s" type="radio" name="product-size" value="S" checked>
+            </label>
+            <label class="product-order__label">
+              <span class="visually-hidden">Размер M</span>
+              <input class="product-order__input product-order__input--size-m" type="radio" name="product-size" value="M">
+            </label>
+            <label class="product-order__label">
+              <span class="visually-hidden">Размер L</span>
+              <input class="product-order__input product-order__input--size-l" type="radio" name="product-size" value="L">
+            </label>
+          </fieldset>
+          <button class="product-order__add-button button button--accent" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

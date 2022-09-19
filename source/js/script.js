@@ -1,3 +1,4 @@
+// menu
 let navMains = document.querySelectorAll('.main-nav');
 let navToggle = document.querySelector('.navigation__button-toggle');
 
@@ -16,3 +17,18 @@ navToggle.addEventListener('click', function () {
     }
   }
 });
+
+// order
+let OrderModal = document.querySelector('.modal');
+let productButton = document.querySelector('.product__button');
+let closeButton = document.querySelector('.close-button');
+
+productButton.onclick = function () {
+  // console.log("click");
+  OrderModal.classList.remove('modal--close');
+};
+
+closeButton.onclick = function () {
+  // console.log("click");
+  OrderModal.classList.add('modal--close');
+};
