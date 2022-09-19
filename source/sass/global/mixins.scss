@@ -8,3 +8,8 @@
 @mixin active {
   opacity: 0.3;
 }
+
+@mixin input-hidden {
+  position: absolute;
+  appearance: none;
+}

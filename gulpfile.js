@@ -5,7 +5,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
+// import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -27,7 +27,7 @@ export const styles = () => { // имя
     // min css
     .pipe(postcss([ // style.css
       autoprefixer(), // style.css -> style.css[prefix]
-      csso() // style.css[prefix] -> style.css[prefix, min]
+      // csso() // style.css[prefix] -> style.css[prefix, min]
     ]))
 
     .pipe(rename('style.min.css'))
@@ -37,9 +37,13 @@ export const styles = () => { // имя
 
 // HTML
 
+// export const html = () => {
+//   return gulp.src('source/*.html')
+//     .pipe(htmlmin({ collapseWhitespace: true }))
+//     .pipe(gulp.dest('build'));
+// };
 export const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 };
 
