@@ -11,12 +11,12 @@
 
 .navigation__user .navigation__item {
   margin-left: 76px;
-  min-height: 79px;
   display: flex;
   align-items: center;
 }
 
 .navigation__user .navigation__link {
+  min-height: 79px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,21 +79,20 @@
 
     .navigation__item {
       margin-left: 0;
-      min-height: 89px;
     }
 
     .navigation__item--search {
       border-left: 1px solid #e5e5e5;
       border-right: 1px solid #e5e5e5;
-      // margin-right: 42px;
-      // margin-right: 40px;
     }
 
     .navigation__link-search {
       width: 82px;
+      min-height: 89px;
     }
 
     .navigation__link-recycled {
+      min-height: 89px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -139,10 +138,7 @@
     }
 
     .navigation__item--search {
-      // border-left: 1px solid #e5e5e5;
-      // border-right: 1px solid #e5e5e5;
-      margin-right: 42px;
-      // margin-right: 40px;
+      margin-right: 32px;
     }
   }
 }

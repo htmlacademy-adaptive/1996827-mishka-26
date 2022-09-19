@@ -8,3 +8,16 @@
 @mixin active {
   opacity: 0.3;
 }
+
+@mixin input-hidden {
+  position: absolute;
+  appearance: none;
+}
+
+@mixin fonter($weight: 400, $size: 25px, $line: 30px) {
+  font-family: "Open Sans", Arial, sans-serif; /* stylelint-disable-line */
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}

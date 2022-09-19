@@ -11,9 +11,11 @@
   font-style: normal;
 
   color: $color-black;
-  // border: 2px solid ;
 
   text-decoration: none;
+
+  outline: none;
+  outline-offset: -2px;
 
   &:hover {
     color: rgba($color-black, 0.6);
@@ -21,5 +23,20 @@
 
   &:active {
     color: rgba($color-black, 0.3);
+  }
+
+  &:disabled {
+    background-color: rgba($color-white, 0.3);
+    color: rgba($color-white, 0.3);
+  }
+
+  &:focus-within {
+    outline: 2px solid $color-green;
+    border-radius: 3px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    border-radius: 3px;
   }
 }

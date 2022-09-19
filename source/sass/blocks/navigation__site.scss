@@ -46,7 +46,7 @@
       position: absolute;
       content: "";
       border-top: 1px solid #e5e5e5;
-      z-index: 20;
+      z-index: 2;
     }
   }
 
@@ -64,10 +64,11 @@
       justify-content: flex-start;
     }
 
-    // .navigation__link--knitting {
-    //   padding-top: 1px;
-    //   padding-left: 6px;
-    // }
+    .navigation__link {
+      min-height: 64px;
+      display: grid;
+      place-items: center;
+    }
   }
 }
 
@@ -77,30 +78,32 @@
     grid-area: navigation__site-wrapper;
     background-color: $color-white;
 
+    // нижняя линия
     &::before {
       height: 1px;
       width: 100%;
       position: absolute;
       content: "";
-      bottom: -13px;
+      bottom: -1px;
       border-top: 1px solid #e5e5e5;
-      z-index: 20;
+      z-index: 2;
     }
   }
 
   .navigation__site {
     .navigation__item {
-      // min-width: 214px;
       min-width: 219px;
     }
 
     .navigation__link {
+      min-height: 89px;
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
     }
   }
 
+  // линия между меню
   .navigation__item--catalog {
     position: relative;
 
@@ -109,7 +112,7 @@
       width: 1px;
       position: absolute;
       content: "";
-      right: 25px;
+      right: 34px;
       border-right: 1px solid #e5e5e5;
       z-index: 0;
     }

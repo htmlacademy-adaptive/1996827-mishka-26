@@ -1,0 +1,19 @@
+@forward "mixins.scss";
+@forward "fonts.scss";
+@forward "variables.scss";
+
+/* Colors */
+:root {
+  --color-white: #ffffff;
+  --color-white-light: #ffffffe6;
+  --modal-shadow: 0px 5px 10px #00010140;
+  --color-black: #000000;
+  --color-gray: #444444;
+  --color-green: #63d1bb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

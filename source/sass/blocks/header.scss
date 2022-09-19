@@ -4,3 +4,39 @@
   min-width: 320px;
   position: relative;
 }
+
+.header-catalog .navigation__site-wrapper {
+  background-color: #f1f1f1;
+}
+
+.header-catalog .navigation__usersub {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $desktop-width) {
+  .header-catalog .navigation__site-wrapper {
+    background-color: $color-white;
+  }
+
+  .header-catalog .navigation__sitesub-wrapper {
+    background-color: #f1f1f1;
+  }
+}
+
+.header-order .navigation__site-wrapper {
+  background-color: #f1f1f1;
+}
+
+.header-order .navigation__usersub {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $desktop-width) {
+  .header-order .navigation__site-wrapper {
+    background-color: $color-white;
+  }
+
+  .header-order .navigation__sitesub-wrapper {
+    background-color: #f1f1f1;
+  }
+}

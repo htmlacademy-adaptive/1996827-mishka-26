@@ -1,50 +1,82 @@
 @use "../global/variables.scss" as *;
 
-.main__order .container-color {
-  background-color: $color-white;
-}
-
-.order {
-  margin: 0 auto;
-  margin-bottom: 50px;
+.order__header {
+  min-height: 177px;
   position: relative;
-  outline: 2px solid #dda0dd;
-  outline-offset: -2px;
+  display: grid;
+  place-items: center;
+  background-color: #f1f1f1;
 }
 
-.order__title {
+.order__header-title {
   margin: 0;
+  display: block;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
-  .main__order .container-color {
-    background-color: $color-gray-fon;
+  .order__header {
+    min-height: 124px;
   }
 
-  .form__fieldset {
-    height: 331px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .order__header-title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
   }
 
-  .form__title-legend {
-    grid-column: 1 / 2;
+  .order .container-color {
+    min-height: 177px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__header {
+    min-height: 130px;
   }
 
-  .form__list {
-    grid-column: 2 / 3;
+  .order__header-title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
   }
 
-  .form__wrap-additionally {
-    display: flex;
-    justify-content: space-between;
+  .order .container-color {
+    min-height: 186px;
+  }
+}
+
+.form-order-container {
+  padding-top: 17px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 64px;
   }
 
-  .form__text-additionally {
-    order: 2;
+  @media (min-width: $desktop-width) {
+    padding: 116px 208px 2px 224px;
   }
+}
 
-  .form__button {
-    order: 1;
-  }
+.form-order__wrapper {
+  padding-top: 73px;
+  padding-bottom: 73px;
+  background-color: #f1f1f1;
+
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../img/tablet.svg");
+  //   background-position: bottom -12px center;
+  //   background-size: auto 24px;
+  //   background-repeat: repeat-x;
+  //   background-position-x: -2px;
+  //   padding-top: 39px;
+  //   padding-bottom: 75px;
+  // }
 }

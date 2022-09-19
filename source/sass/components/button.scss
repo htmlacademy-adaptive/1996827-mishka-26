@@ -23,6 +23,10 @@
   // border: none;
   cursor: pointer;
 
+  outline: none;
+  outline-offset: -2px;
+
+
   &:hover {
     background-color: $color-gray;
     color: $color-white;
@@ -31,8 +35,6 @@
   &:active {
     background-color: $color-gray;
     color: rgba($color-white, 0.3);
-    // $color-white;
-    // opacity: 0.3;
   }
 
   &:disabled {

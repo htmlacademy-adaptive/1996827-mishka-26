@@ -12,7 +12,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
-// import gulpCheerio from 'gulp-cheerio';
 
 // 1 найти файлы
 // 2 действие над файлами
@@ -28,7 +27,7 @@ export const styles = () => { // имя
     // min css
     .pipe(postcss([ // style.css
       autoprefixer(), // style.css -> style.css[prefix]
-      csso() // style.css[prefix] -> style.css[prefix, min]
+      // csso() // style.css[prefix] -> style.css[prefix, min]
     ]))
 
     .pipe(rename('style.min.css'))
@@ -58,21 +57,21 @@ const scripts = () => {
 
 // Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 };
 
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 };
 
 // WebP
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(
     squoosh({
@@ -91,7 +90,7 @@ export const createWebp = () => {
 //     .pipe(svgo())
 //     .pipe(gulp.dest('build/img'));
 // }
-export const svg = (done) => {
+const svg = (done) => {
   gulp.src(['source/img/*/*.svg', '!source/img/icon/sprites/*.svg', '!source/img/sprites.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
@@ -136,7 +135,7 @@ const copy = (done) => {
 
 // Clean
 
-const clean = (done) => {
+export const clean = (done) => {
   return del('build/*');
 };
 
@@ -183,6 +182,10 @@ export const build = gulp.series(
     svg,
     // sprite,
     createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
   )
 );
 

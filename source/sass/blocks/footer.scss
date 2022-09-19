@@ -40,10 +40,14 @@
   .footer__wrapper {
     padding: 0 50px;
     max-width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(219px, 1fr) 1fr minmax(219px, 1fr);
   }
 
   .footer__logo-wrapper {
+    display: flex;
+  }
+
+  .footer__logo-link {
     min-height: 143px;
     display: flex;
     align-items: center;

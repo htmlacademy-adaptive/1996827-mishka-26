@@ -8,7 +8,6 @@
 // components
 @use "./components/title.scss";
 @use "./components/button.scss";
-@use "./components/form.scss";
 @use "./components/link.scss";
 @use "./components/label.scss";
 @use "./components/icon.scss";
@@ -42,3 +41,7 @@
 
 // form
 @use "./blocks/order.scss";
+@use "./blocks/form.scss";
+
+//modal
+@use "./blocks/modal.scss";
