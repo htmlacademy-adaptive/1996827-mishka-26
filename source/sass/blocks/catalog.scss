@@ -10,7 +10,7 @@
   background-color: #f1f1f1;
 }
 
-.catalog__title {
+.catalog-header__title {
   margin: 0;
   display: block;
   box-sizing: border-box;
@@ -101,7 +101,7 @@
     min-height: 124px;
   }
 
-  .catalog__title {
+  .catalog-header__title {
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
@@ -127,7 +127,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .product__images {
+  .catalog__images {
     height: 334px;
   }
 
@@ -161,11 +161,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main__catalog .catalog {
+    margin: 0;
+    padding: 0;
+  }
+
   .catalog-header {
     min-height: 130px;
   }
 
-  .catalog__title {
+  .catalog-header__title {
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
@@ -185,6 +190,7 @@
     margin-bottom: 57px;
     grid-template-columns: repeat(3, 316px);
     column-gap: 51px;
+    // column-gap: 33px;
   }
 
   .catalog__item {
@@ -195,7 +201,7 @@
     grid-template-columns: 1fr;
   }
 
-  .product__images {
+  .catalog__images {
     width: 316px;
     height: 462px;
   }
@@ -214,7 +220,7 @@
     margin-bottom: 60px;
   }
 
-  .toy-description-laundry_basket-desktop {
+  .atalog__toy-description--h {
     margin-bottom: 60px;
   }
 
