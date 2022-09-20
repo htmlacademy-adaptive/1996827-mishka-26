@@ -127,7 +127,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: 372px 1fr;
-    grid-template-rows: repeat(auto-fit, 89px);
+    // grid-template-rows: repeat(auto-fit, 89px);
     grid-template-areas:
       "header__logo-wrapper navigation__user"
       "navigation__site-wrapper navigation__usersub";
@@ -153,7 +153,7 @@
     margin: 0 auto;
     padding: 0;
     grid-template-columns: 1fr 150px 1fr;
-    grid-template-rows: repeat(auto-fit, 89px);
+    // grid-template-rows: repeat(auto-fit, 89px);
     // height: auto;
     grid-template-areas:
       "navigation__site-wrapper header__logo-wrapper navigation__user"
