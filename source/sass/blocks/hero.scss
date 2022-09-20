@@ -3,13 +3,13 @@
 .hero {
   position: relative;
   padding-bottom: 120px;
-  background-image: url("../img/hero/hero-mobile.png");
+  background-image: url("../img/hero/hero-mobile.webp");
   background-repeat: no-repeat;
   background-position: 50% -17px;
 
   // retina
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero/hero-mobile@2x.png");
+    background-image: url("../img/hero/hero-mobile@2x.webp");
     background-size: 320px auto;
   }
 }
@@ -70,12 +70,12 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    background-image: url("../img/hero/hero-desktop.png");
+    background-image: url("../img/hero/hero-desktop.webp");
     background-position: 50% -65px;
 
     // retina
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-desktop@2x.png");
+      background-image: url("../img/hero/hero-desktop@2x.webp");
       background-size: 768px auto;
     }
   }

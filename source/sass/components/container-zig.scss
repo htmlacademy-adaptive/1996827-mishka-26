@@ -39,6 +39,7 @@
       content: "";
       // left: 12px;
       // left: 0;
+      bottom: 91px;
       background-image: url("../img/icon/zigzag-line-tablet-while.svg");
       z-index: 2;
     }
@@ -70,7 +71,8 @@
       height: 24px;
       position: absolute;
       content: "";
-      top: 153px;
+      // top: 153px;
+      top: 154px;
       background-image: url("../img/icon/zigzag-line-tablet-while.svg");
       z-index: 2;
     }
@@ -95,7 +97,9 @@
       height: 34px;
       position: absolute;
       content: "";
+      bottom: 70px;
       background-image: url("../img/icon/zigzag-line-desktop-while.svg");
+      z-index: 2;
     }
   }
 
