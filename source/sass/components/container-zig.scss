@@ -37,7 +37,8 @@
       height: 24px;
       position: absolute;
       content: "";
-      left: 12px;
+      // left: 12px;
+      // left: 0;
       background-image: url("../img/icon/zigzag-line-tablet-while.svg");
       z-index: 2;
     }
@@ -45,7 +46,7 @@
 
   .container-zig-product {
     &::after {
-      width: 100%;
+      width: 98%;
       height: 17px;
       position: absolute;
       content: "";
@@ -117,7 +118,7 @@
       height: 34px;
       position: absolute;
       content: "";
-      left: 7px;
+      // left: 7px;
       top: 170px;
       background-image: url("../img/icon/zigzag-line-desktop-while.svg");
     }
@@ -128,7 +129,7 @@
       height: 34px;
       position: absolute;
       content: "";
-      left: 7px;
+      // left: 7px;
       top: 170px;
       background-image: url("../img/icon/zigzag-line-desktop-while.svg");
     }
