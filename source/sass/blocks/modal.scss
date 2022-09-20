@@ -135,6 +135,13 @@
   }
 }
 
+.product-order__add-button {
+  min-width: 350px;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
 // window
 .modal {
   position: fixed;
