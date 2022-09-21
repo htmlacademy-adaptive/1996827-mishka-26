@@ -89,9 +89,9 @@
 }
 
 // .navigation--nojs
-// .navigation--nojs .navigation__button-toggle {
-//   display: none;
-// }
+.main-nav--nojs .navigation__button-toggle {
+  display: none;
+}
 
 @media (max-width: $mobile-width-only) {
   .navigation--closed .navigation__site {
