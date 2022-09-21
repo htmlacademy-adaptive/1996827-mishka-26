@@ -34,6 +34,30 @@
   box-sizing: border-box;
   margin-top: 30px;
   border: 1px solid #e5e5e5;
+
+  .catalog__toy-icon {
+    fill: #cccccc;
+  }
+
+  &:hover {
+    .catalog__toy-name {
+      color: rgba($color-black, 0.6);
+    }
+
+    .catalog__toy-icon {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    .catalog__toy-name {
+      color: rgba($color-black, 0.3);
+    }
+
+    .catalog__toy-icon {
+      fill: rgba($color-green, 0.6);
+    }
+  }
 }
 
 .catalog__toy-wrapper {
@@ -48,6 +72,26 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  // &:hover {
+  //   color: rgba($color-black, 0.6);
+
+  //   .catalog__toy-icon {
+  //     fill: rgba($color-green, 1);
+  //   }
+
+  //   .catalog__toy-icon path {
+  //     fill: rgba($color-green, 1);
+  //   }
+  // }
+
+  // &:active {
+  //   color: rgba($color-black, 0.3);
+
+  //   .catalog__toy-icon {
+  //     fill: rgba($color-green, 0.6);
+  //   }
+  // }
 }
 
 .catalog__toy-description {
@@ -83,9 +127,9 @@
   }
 }
 
-.catalog__toy-icon {
-  fill: rgba($color-black, 0.6);
-}
+// .catalog__toy-icon {
+//   fill: rgba($color-black, 0.6);
+// }
 
 @media (min-width: $tablet-width) {
   .catalog-header {

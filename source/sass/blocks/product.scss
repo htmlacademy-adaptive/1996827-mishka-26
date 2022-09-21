@@ -85,7 +85,7 @@
 .product__button {
   margin: 0 auto;
   width: 260px;
-  height: 52px;
+  min-height: 52px;
   padding: 16px 70px;
   grid-area: product__button;
 }
@@ -110,7 +110,7 @@
     padding: 0;
     padding-top: 10px;
     width: 450px;
-    height: 100px;
+    min-height: 100px;
     display: block;
     justify-self: flex-start;
     font-weight: 700;
@@ -127,7 +127,7 @@
     padding-top: 25px;
     margin-bottom: 20px;
     width: 100px;
-    height: 100px;
+    min-height: 100px;
     text-align: center;
     justify-content: center;
   }
@@ -138,7 +138,7 @@
     margin-top: -12px;
     margin-bottom: 38px;
     width: 292px;
-    height: 90px;
+    min-height: 90px;
     justify-self: start;
     align-self: flex-start;
     display: block;
@@ -151,7 +151,7 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    height: 178px;
+    min-height: 178px;
     justify-self: start;
     align-self: flex-start;
     display: block;
@@ -169,7 +169,7 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    height: 24px;
+    min-height: 24px;
     font-weight: 700;
     font-size: 20px;
     // 24/20 = 1.2
@@ -182,7 +182,7 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    height: 52px;
+    min-height: 52px;
     margin-top: 30px;
     justify-self: start;
     align-self: flex-start;
@@ -242,12 +242,13 @@
     margin-top: 55px;
     margin-left: -8px;
     width: 545px;
-    height: 85px;
+    min-height: 85px;
     display: block;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
     z-index: 2;
+    // margin-bottom: 20px;
   }
 
   .product__text {

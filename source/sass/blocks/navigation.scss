@@ -40,6 +40,41 @@
   right: -30px;
   border: none;
   background-color: transparent;
+
+  // &:hover {
+  //   background-color: $color-gray;
+  //   color: $color-white;
+  // }
+
+  // &:active {
+  //   background-color: $color-gray;
+  //   color: rgba($color-white, 0.3);
+  // }
+
+  // &:disabled {
+  //   background-color: rgba($color-white, 0.3);
+  //   color: rgba($color-white, 0.3);
+  // }
+
+  // &:focus-visible {
+  //   outline: 2px solid $color-green;
+  //   border-radius: 3px;
+  // }
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
 }
 
 // navigation--closed
@@ -49,26 +84,24 @@
   height: 2px;
   position: absolute;
   content: "";
-  top: 40%;
+  // top: 40%;
+  top: 30px;
   right: 30px;
   background-color: $color-black;
   box-shadow: 0 6px 0 0 $color-black, 0 12px 0 0 $color-black;
-
-  &:focus-visible {
-    outline: 2px solid $color-green;
-    border-radius: 3px;
-  }
 }
 
 // .navigation--opened
 .navigation--opened .navigation__button-toggle {
   &::before,
   &::after {
-    width: 27px;
+    width: 25px;
     height: 2px;
     position: absolute;
     content: "";
-    top: 53%;
+    // top: 53%;
+    // right: 28px;
+    top: 35px;
     right: 28px;
     background-color: $color-black;
   }
@@ -82,10 +115,10 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
-    background-color: fade($color-black, 30%);
-  }
+  // &:active::before,
+  // &:active::after {
+  //   background-color: fade($color-black, 30%);
+  // }
 }
 
 // .navigation--nojs

@@ -63,16 +63,31 @@
   min-width: 100%;
   min-height: 52px;
   position: relative;
-  background-image: url("../img/icon/arrow.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
+  // background-image: url("../img/icon/arrow.svg");
+  // background-repeat: no-repeat;
+  // background-color: transparent;
   border: 1px solid $color-gray-light;
   background-position: 50% 50%;
 
-  &--next {
-    border-right: none;
-    transform: rotate(180deg);
-    justify-self: flex-end;
+  // &--next {
+  //   border-right: none;
+  //   transform: rotate(180deg);
+  //   justify-self: flex-end;
+  // }
+
+  &:hover {
+    background-color: transparent;
+    // color: $color-white;
+
+    .strelka {
+      fill: rgba($color-black, 0.6);
+    }
+  }
+
+  &:active {
+    .strelka {
+      fill: rgba($color-black, 0.3);
+    }
   }
 
   // тест миксина
@@ -84,6 +99,10 @@
   //   @include active;
   // }
 }
+
+// .strelka {
+//   fill: $color-black;
+// }
 
 .reviews__button-write {
   min-width: 100%;
