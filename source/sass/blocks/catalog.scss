@@ -35,12 +35,27 @@
   margin-top: 30px;
   border: 1px solid #e5e5e5;
 
+  .catalog__toy-icon {
+    fill: #cccccc;
+  }
+
   &:hover {
-    outline: 2px solid $color-green;
-    z-index: 2;
+    .catalog__toy-name {
+      color: rgba($color-black, 0.6);
+    }
 
     .catalog__toy-icon {
       fill: $color-green;
+    }
+  }
+
+  &:active {
+    .catalog__toy-name {
+      color: rgba($color-black, 0.3);
+    }
+
+    .catalog__toy-icon {
+      fill: rgba(99, 209, 187, 1);
     }
   }
 }
@@ -93,7 +108,8 @@
 }
 
 .catalog__toy-icon {
-  fill: rgba($color-black, 0.6);
+  // fill: rgba($color-black, 0.6);
+  fill: #cccccc;
 }
 
 @media (min-width: $tablet-width) {
