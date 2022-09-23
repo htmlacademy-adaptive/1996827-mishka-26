@@ -15,6 +15,7 @@
 .product__week {
   margin: 0;
   margin-top: 5px;
+  margin-bottom: 20px;
   grid-area: product__week;
   font-weight: 700;
   font-size: 17px;
@@ -38,10 +39,12 @@
 
 .product__features {
   grid-area: product__features;
+  margin-bottom: 20px;
 }
 
 .product__features-wrapper {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .product__features-name {
@@ -85,14 +88,14 @@
 .product__button {
   margin: 0 auto;
   width: 260px;
-  min-height: 52px;
+  height: 52px;
   padding: 16px 70px;
   grid-area: product__button;
 }
 
 @media (min-width: $tablet-width) {
   .product {
-    margin-top: 44px;
+    margin-top: 0;
     margin-bottom: 52px;
     display: grid;
     place-items: center;
@@ -110,7 +113,7 @@
     padding: 0;
     padding-top: 10px;
     width: 450px;
-    min-height: 100px;
+    height: 100px;
     display: block;
     justify-self: flex-start;
     font-weight: 700;
@@ -127,7 +130,7 @@
     padding-top: 25px;
     margin-bottom: 20px;
     width: 100px;
-    min-height: 100px;
+    height: 100px;
     text-align: center;
     justify-content: center;
   }
@@ -138,7 +141,7 @@
     margin-top: -12px;
     margin-bottom: 38px;
     width: 292px;
-    min-height: 90px;
+    height: 90px;
     justify-self: start;
     align-self: flex-start;
     display: block;
@@ -151,7 +154,7 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    min-height: 178px;
+    height: 178px;
     justify-self: start;
     align-self: flex-start;
     display: block;
@@ -161,6 +164,7 @@
     display: flex;
     box-sizing: border-box;
     padding-top: 10px;
+    margin-bottom: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #ececec;
   }
@@ -169,7 +173,7 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    min-height: 24px;
+    height: 24px;
     font-weight: 700;
     font-size: 20px;
     // 24/20 = 1.2
@@ -182,8 +186,8 @@
     margin: 0;
     padding: 0;
     width: 292px;
-    min-height: 52px;
-    margin-top: 30px;
+    height: 52px;
+    margin-top: 32px;
     justify-self: start;
     align-self: flex-start;
   }
@@ -206,7 +210,7 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding-top: 40px;
+    padding-top: 18px;
     padding-bottom: 95px;
     margin-bottom: 30px;
     max-width: 1050px;
@@ -232,6 +236,7 @@
 
   .product__week {
     margin: 0;
+    margin-top: -4px;
     margin-left: 29px;
     padding: 0;
     min-height: 494px;
@@ -242,13 +247,12 @@
     margin-top: 55px;
     margin-left: -8px;
     width: 545px;
-    min-height: 85px;
+    height: 85px;
     display: block;
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
     z-index: 2;
-    // margin-bottom: 20px;
   }
 
   .product__text {

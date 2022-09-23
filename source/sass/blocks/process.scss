@@ -99,8 +99,9 @@
     padding: 0;
     margin-bottom: 105px;
     width: 1050px;
+    min-height: 455px;
     grid-template-columns: 682px 290px;
-    grid-template-rows: 171px 171px 112px;
+    grid-template-rows: 171px minmax(171px, 1fr) 112px;
     column-gap: 78px;
   }
 
@@ -118,6 +119,7 @@
     padding: 0;
     font-size: 15px;
     line-height: 30px;
+    display: block;
   }
 
   .process__text .br1 {
@@ -127,6 +129,10 @@
   .process-video-wrapper {
     order: 2;
     grid-row: 1/-1;
+  }
+
+  .process__video {
+    margin: 0;
   }
 
   .process__button {

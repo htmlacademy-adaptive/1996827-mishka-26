@@ -108,7 +108,7 @@
     position: relative;
 
     &::before {
-      height: 89px;
+      min-height: 89px;
       width: 1px;
       position: absolute;
       content: "";

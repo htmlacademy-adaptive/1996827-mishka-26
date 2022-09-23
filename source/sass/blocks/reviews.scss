@@ -77,7 +77,6 @@
 
   &:hover {
     background-color: transparent;
-    // color: $color-white;
 
     .strelka {
       fill: rgba($color-black, 0.6);
@@ -99,10 +98,6 @@
   //   @include active;
   // }
 }
-
-// .strelka {
-//   fill: $color-black;
-// }
 
 .reviews__button-write {
   min-width: 100%;

@@ -37,19 +37,20 @@
     }
   }
 
-  // &:active {
-  //   .active();
-  // }
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
 
-  // fill: #63d1bb;
-
-  // &:hover {
-  //   fill: rgba(70, 193, 174, 1);
-  // }
-
-  // &:active {
-  //   fill: rgba(70, 193, 174, 0.3);
-  // }
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
 
   // тест миксина
   // &:hover {

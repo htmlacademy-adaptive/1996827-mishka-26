@@ -10,7 +10,7 @@
   background-color: #f1f1f1;
 }
 
-.catalog__title {
+.catalog-header__title {
   margin: 0;
   display: block;
   box-sizing: border-box;
@@ -40,19 +40,23 @@
   }
 
   &:hover {
-    .catalog__toy-name {
-      color: rgba($color-black, 0.6);
-    }
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
 
     .catalog__toy-icon {
       fill: $color-green;
     }
   }
 
+  &:hover .catalog__toy-wrapper {
+    box-shadow: 0 6px 10px #0000001a;
+  }
+
   &:active {
-    .catalog__toy-name {
-      color: rgba($color-black, 0.3);
-    }
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
 
     .catalog__toy-icon {
       fill: rgba($color-green, 0.6);
@@ -72,26 +76,6 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  // &:hover {
-  //   color: rgba($color-black, 0.6);
-
-  //   .catalog__toy-icon {
-  //     fill: rgba($color-green, 1);
-  //   }
-
-  //   .catalog__toy-icon path {
-  //     fill: rgba($color-green, 1);
-  //   }
-  // }
-
-  // &:active {
-  //   color: rgba($color-black, 0.3);
-
-  //   .catalog__toy-icon {
-  //     fill: rgba($color-green, 0.6);
-  //   }
-  // }
 }
 
 .catalog__toy-description {
@@ -127,16 +111,36 @@
   }
 }
 
-// .catalog__toy-icon {
-//   fill: rgba($color-black, 0.6);
-// }
+.catalog__toy-icon {
+  fill: #cccccc;
+}
+
+.process__button {
+  border: none;
+  outline: none;
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .catalog-header {
     min-height: 124px;
   }
 
-  .catalog__title {
+  .catalog-header__title {
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
@@ -157,12 +161,12 @@
 
   .catalog__item {
     margin-top: 0;
-    height: 334px;
+    min-height: 334px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .product__images {
+  .catalog__images {
     height: 334px;
   }
 
@@ -196,11 +200,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main__catalog .catalog {
+    margin: 0;
+    padding: 0;
+  }
+
   .catalog-header {
     min-height: 130px;
   }
 
-  .catalog__title {
+  .catalog-header__title {
     font-weight: 700;
     font-size: 53px;
     line-height: 57px;
@@ -215,23 +224,30 @@
   }
 
   .catalog__list {
-    margin-bottom: 382px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 57px;
     grid-template-columns: repeat(3, 316px);
-    // grid-template-columns: repeat(3, 1fr);
     column-gap: 51px;
   }
 
   .catalog__item {
+    margin: 0;
+    padding: 0;
+    min-height: 659px;
     display: grid;
-    // grid-template-rows: min-content min-content;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
-    border: none;
+    grid-template-columns: 1fr;
   }
 
-  .product__images {
+  .catalog__images {
     width: 316px;
     height: 462px;
+  }
+
+  .catalog__toy-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .catalog__toy-description {
@@ -242,7 +258,7 @@
     margin-bottom: 60px;
   }
 
-  .toy-description-laundry_basket-desktop {
+  .atalog__toy-description--h {
     margin-bottom: 60px;
   }
 
