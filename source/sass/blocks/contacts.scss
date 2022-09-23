@@ -82,30 +82,6 @@
   margin-bottom: 40px;
   grid-area: contacts__map-wrapper;
   position: relative;
-<<<<<<< HEAD
-=======
-
-  &::before {
-    width: 67px;
-    height: 100px;
-    position: absolute;
-    content: "";
-    top: 31%;
-    left: 43%;
-    background-image: url("../img/icon/map-marker.svg");
-    background-size: cover;
-    background-position: 50% 50%;
-    cursor: pointer;
-    z-index: 2;
-  }
-}
-
-.contacts__map {
-  width: 100%;
-  border: none;
-  display: block;
-  position: relative;
->>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
 }
 
 .contacts__button {
@@ -176,7 +152,6 @@
   }
 
   .contacts__map-wrapper {
-    // width: 100%;
     margin: 0 -50px;
     margin-bottom: 58px;
     position: relative;
