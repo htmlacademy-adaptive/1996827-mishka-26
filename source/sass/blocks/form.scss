@@ -2,10 +2,16 @@
 @use "../global/mixins.scss" as *;
 
 .form-container {
-  padding-bottom: 55px;
-
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.order__form {
+  margin-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -24,6 +30,24 @@
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 0.94;
+  }
+}
+
+.form-order-container p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
   }
 }
 
@@ -526,7 +550,7 @@
 
 .form__submit {
   width: 260px;
-  min-height: 52px;
+  height: 52px;
   padding: 18px 37px;
   font-size: 17px;
 
