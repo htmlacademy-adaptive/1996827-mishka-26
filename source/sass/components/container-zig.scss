@@ -20,26 +20,24 @@
   }
 }
 
-// .container-zig-catalog-header {
-//   &::after {
-//     width: 100%;
-//     height: 6px;
-//     position: absolute;
-//     content: "";
-//     background-image: url("../img/icon/zigzag-line-tablet-while.svg");
-//   }
-// }
-
 @media (min-width: $tablet-width) {
   .container-zig-hero {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
     &::after {
       width: 100%;
       height: 24px;
       position: absolute;
       content: "";
+<<<<<<< HEAD
+      top: 670px;
+=======
       // left: 12px;
       // left: 0;
       bottom: 91px;
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
       background-image: url("../img/icon/zigzag-line-tablet-while.svg");
       z-index: 2;
     }
@@ -93,13 +91,24 @@
 
 @media (min-width: $desktop-width) {
   .container-zig-hero {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
     &::after {
+      width: 100%;
       height: 34px;
       position: absolute;
       content: "";
+<<<<<<< HEAD
+      top: 666px;
+      left: -48px;
+      background-image: url("../img/icon/zigzag-line-desktop-while555.svg");
+=======
       bottom: 70px;
       background-image: url("../img/icon/zigzag-line-desktop-while.svg");
       z-index: 2;
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
     }
   }
 
@@ -119,12 +128,13 @@
 
   .container-zig-catalog-header {
     &::after {
+      width: 100%;
       height: 34px;
       position: absolute;
       content: "";
-      // left: 7px;
       top: 170px;
-      background-image: url("../img/icon/zigzag-line-desktop-while.svg");
+      left: 0;
+      background-image: url("../img/icon/frame4.svg");
     }
   }
 
@@ -133,9 +143,9 @@
       height: 34px;
       position: absolute;
       content: "";
-      // left: 7px;
       top: 170px;
-      background-image: url("../img/icon/zigzag-line-desktop-while.svg");
+      left: 7px;
+      background-image: url("../img/icon/zigzag-line-desktop-while555.svg");
     }
   }
 }

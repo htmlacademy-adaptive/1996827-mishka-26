@@ -25,15 +25,42 @@
     display: block;
   }
 
-  // тест миксина
   &:hover {
-    @include hover;
+    path {
+      fill: rgba(70, 193, 174, 1);
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba(70, 193, 174, 0.3);
+    }
+  }
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
   }
 
   // тест миксина
-  &:active {
-    @include active;
-  }
+  // &:hover {
+  //   @include hover;
+  // }
+
+  // тест миксина
+  // &:active {
+  //   @include active;
+  // }
 }
 
 @media (min-width: $tablet-width) {

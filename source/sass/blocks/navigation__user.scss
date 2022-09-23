@@ -20,19 +20,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  // цвет инлайновой svg
-  // &:hover {
-  //   path {
-  //     fill: rgba($color-green-dark, 1);
-  //     opacity: 1;
-  //   }
-  // }
-  // &:active {
-  //   path {
-  //     fill: rgba($color-black, 0.6);
-  //   }
-  // }
 }
 
 .navigation--opened .navigation__user {
@@ -124,21 +111,15 @@
 @media (min-width: $desktop-width) {
   .navigation__user {
     justify-content: flex-end;
+  }
 
-    .navigation__link-search {
-      justify-content: flex-start;
-    }
+  .navigation__item--recycled {
+    width: 265px;
+    justify-self: flex-end;
+    justify-content: flex-end;
+  }
 
-    .navigation__user-search-icon {
-      margin-left: 40%;
-    }
-
-    .navigation__user-cart-icon {
-      margin-right: 32px;
-    }
-
-    .navigation__item--search {
-      margin-right: 32px;
-    }
+  .navigation__user .navigation__user-cart-icon {
+    margin-right: 32px;
   }
 }

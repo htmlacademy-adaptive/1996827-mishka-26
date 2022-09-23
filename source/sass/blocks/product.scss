@@ -15,6 +15,7 @@
 .product__week {
   margin: 0;
   margin-top: 5px;
+  margin-bottom: 20px;
   grid-area: product__week;
   font-weight: 700;
   font-size: 17px;
@@ -38,10 +39,12 @@
 
 .product__features {
   grid-area: product__features;
+  margin-bottom: 20px;
 }
 
 .product__features-wrapper {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .product__features-name {
@@ -92,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    margin-top: 44px;
+    margin-top: 0;
     margin-bottom: 52px;
     display: grid;
     place-items: center;
@@ -161,6 +164,7 @@
     display: flex;
     box-sizing: border-box;
     padding-top: 10px;
+    margin-bottom: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #ececec;
   }
@@ -183,7 +187,7 @@
     padding: 0;
     width: 292px;
     height: 52px;
-    margin-top: 30px;
+    margin-top: 32px;
     justify-self: start;
     align-self: flex-start;
   }
@@ -206,7 +210,7 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding-top: 40px;
+    padding-top: 18px;
     padding-bottom: 95px;
     margin-bottom: 30px;
     max-width: 1050px;
@@ -232,6 +236,7 @@
 
   .product__week {
     margin: 0;
+    margin-top: -4px;
     margin-left: 29px;
     padding: 0;
     min-height: 494px;

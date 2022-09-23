@@ -2,7 +2,7 @@
 
 .process {
   padding-top: 21px;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
   display: grid;
   position: relative;
   border: 1px solid #e5e5e5;
@@ -21,8 +21,7 @@
 
 .process__video {
   width: 100%;
-  min-height: 150px;
-  margin-bottom: 28px;
+  padding-bottom: 6px;
 }
 
 .process__text {
@@ -37,7 +36,7 @@
 
 .process__button {
   position: absolute;
-  top: 140px;
+  top: 135px;
   left: 30%;
   border: none;
   background-color: transparent;
@@ -54,7 +53,7 @@
   .process {
     padding-top: 0;
     padding-bottom: 46px;
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 
   .process__title {
@@ -76,8 +75,8 @@
   }
 
   .process__button {
-    top: 180px;
-    left: 41%;
+    top: 185px;
+    left: 42%;
   }
 
   .process__link {
@@ -87,6 +86,7 @@
   }
 
   .process__text {
+    width: 650px;
     padding: 0 17px 0 40px;
     font-weight: 400;
     font-size: 15px;
@@ -97,11 +97,16 @@
 @media (min-width: $desktop-width) {
   .process {
     padding: 0;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
     width: 1050px;
     min-height: 455px;
     grid-template-columns: 682px 290px;
+<<<<<<< HEAD
+    // grid-template-rows: 171px minmax(171px, 1fr) 112px;
+    grid-template-rows: 171px 169px 112px;
+=======
     grid-template-rows: 171px minmax(171px, 1fr) 112px;
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
     column-gap: 78px;
   }
 
@@ -117,6 +122,8 @@
 
   .process__text {
     padding: 0;
+    margin-bottom: 0;
+    width: 230px;
     font-size: 15px;
     line-height: 30px;
     display: block;
@@ -135,6 +142,10 @@
   .process__video {
     margin: 0;
     // margin-bottom: 32px;
+  }
+
+  .process__video {
+    margin: 0;
   }
 
   .process__button {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
@@ -8,32 +9,43 @@
   <link rel="apple-touch-icon" href="img/favicon/apple180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1?apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5&lang=ru_RU" type="text/javascript"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин домашнего уюта: Мишка</title>
 </head>
+
 <body>
   <header class="header">
     <nav class="header__navigation navigation">
 
+<<<<<<< HEAD
+      <div class="main-nav navigation__logo-wrapper navigation--opened navigation--closed navigation--nojs">
+=======
       <div class="main-nav navigation__logo-wrapper main-nav--closed main-nav--nojs">
 
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
         <!-- aria-label="Логотип интернет-магазина Mishka." -->
         <a class="navigation__logo-link link" href="/">
           <!-- кадрирование логотипа -->
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/logo/mishka-desktop-header.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/mishka-tablet-header.svg">
-            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
+            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35"
+              alt="Логотип интернет-магазина Mishka.">
           </picture>
         </a>
 
-        <button class="button navigation__button-toggle" type="button">
+        <button class="navigation__button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
+<<<<<<< HEAD
+      <div class="main-nav navigation__site-wrapper navigation--opened navigation--closed navigation--nojs">
+=======
       <div class="main-nav navigation__site-wrapper main-nav--closed main-nav--nojs">
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
         <ul class="navigation__site reset-list">
           <li class="navigation__item navigation__item--catalog">
             <a class="navigation__link link" href="catalog.html">Каталог товаров</a>
@@ -55,7 +67,11 @@
         </ul>
       </div>
 
+<<<<<<< HEAD
+      <div class="main-nav navigation__user-wrapper navigation--opened navigation--closed navigation--nojs">
+=======
       <div class="main-nav navigation__user-wrapper main-nav--closed main-nav--nojs">
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
         <ul class="navigation__user reset-list">
           <li class="navigation__item navigation__item--search">
             <a class="link navigation__link navigation__link-search" href="#" title="Поиск по сайту">
@@ -67,13 +83,18 @@
               <span class="navigation__text-search">Поиск по сайту</span>
             </a>
           </li>
+<<<<<<< HEAD
+          <li class="navigation__item navigation__item--recycled">
+            <a class="link navigation__link navigation__link-recycled" href="#">
+=======
           <li class="navigation__item">
             <a class="link navigation__link navigation__link-recycled" href="#" title="Перейти в корзину">
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
               <!-- svg sprites -->
-              <svg class="navigation__user-cart-icon icon" width="21" height="18" viewBox="0 0 21 18" >
+              <svg class="navigation__user-cart-icon icon" width="21" height="18" viewBox="0 0 21 18">
                 <use xlink:href="img/sprites.svg#icon-cart"></use>
               </svg>
-              <p>Корзина: <span class="navigation__recycled-amount">пока пуста</span></p>
+              <p class="navigation__recycled-amount">Корзина: пока пуста</p>
             </a>
           </li>
         </ul>
@@ -118,6 +139,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </div>
 
@@ -152,9 +174,19 @@
           <div class="product__images-wrapper">
             <!-- retina  кадрирование -->
             <picture>
+<<<<<<< HEAD
+              <source media="(min-width: 1150px)"
+                srcset="./img/catalog/knitted_baskets-desktop.webp 1x, ./img/catalog/knitted_baskets-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/knitted_baskets-tablet.webp 1x, ./img/catalog/knitted_baskets-tablet@2x.webp 2x">
+              <img class="product__images" src="./img/catalog/knitted_baskets-mobile.webp"
+                srcset="./img/catalog/knitted_baskets-mobile@2x.webp 2x" width="260" height="315"
+                alt="Три вязаные корзинки.">
+=======
               <source media="(min-width: 1150px)" srcset="./img/catalog/knitted_baskets-desktop.webp 1x, ./img/catalog/knitted_baskets-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="./img/catalog/knitted_baskets-tablet.webp 1x, ./img/catalog/knitted_baskets-tablet@2x.webp 2x">
               <img class="product__images" src="./img/catalog/knitted_baskets-mobile.webp" srcset="./img/catalog/knitted_baskets-mobile@2x.webp 2x" width="260" height="315" alt="Три вязаные корзинки.">
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
             </picture>
           </div>
 
@@ -183,6 +215,17 @@
         </section>
 
         <section class="main__reviews reviews">
+<<<<<<< HEAD
+          <h2 class="reviews__title title title--h2">Отзывы</h2>
+
+          <ul class="reviews__list reset-list">
+            <li class="feedback__item reviews__item">
+              <blockquote class="reviews__quote">
+                Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества
+                лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек
+                в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
+              </blockquote>
+=======
             <h2 class="reviews__title title title--h2">Отзывы</h2>
 
             <ul class="reviews__list reset-list feedback">
@@ -190,28 +233,35 @@
                 <blockquote class="reviews__quote">
                   Я молодая мама, но всё равно <br class="br1">фотографии не набирали и близко <br class="br1">такого количества лайков, как <br class="br1 br2">у популярных инстамамочек. <br class="br1">В отчаянии, я накупила <br class="br1">аксессуаров и игрушек в Мишке, <br class="br1">и мои<br class="br2"> фотографии сразу стали <br class="br1">более стильными, а также <br class="br1">набирают больше лайков!
                 </blockquote>
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
 
-                <p class="reviews__author">
-                  Анастасия Красильникова
-                </p>
+              <p class="reviews__author">
+                Анастасия Красильникова
+              </p>
 
-                <a class="reviews__user-alias link" href="#">@misssssiskras</a>
-              </li>
-            </ul>
+              <a class="reviews__user-alias link" href="#">@misssssiskras</a>
+            </li>
+          </ul>
 
-            <div class="reviews__button-wrapper">
-              <button class="reviews__button reviews__button--prev button" type="button">
-                <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
-
-              <button class="reviews__button reviews__button--next button" type="button">
-                <span class="visually-hidden">Следующий отзыв</span>
-              </button>
-            </div>
-
-            <button class="reviews__button-write button" type="button">
-              Написать
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button--prev button" type="button">
+              <svg class="strelka" width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" />
+              </svg>
+              <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
+
+            <button class="reviews__button reviews__button--next button" type="button">
+              <svg class="strelka" width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" />
+              </svg>
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
+
+          <button class="reviews__button-write button" type="button">
+            Написать
+          </button>
         </section>
       </div>
     </div>
@@ -232,18 +282,36 @@
 
             <dl class="contacts__address">
               <dt class="contacts__address-name">адрес:</dt>
-              <dd class="contacts__address-value">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</dd>
+              <dd class="contacts__address-value">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101
+              </dd>
             </dl>
           </div>
 
+<<<<<<< HEAD
+          <div class="contacts__map-wrapper contacts__map map">
+            <!-- width="560" -->
+            <iframe class="map__imageif" src="https://yandex.ru/map-widget/v1/-/CCUVf0QTwA" height="400"
+              allowfullscreen></iframe>
+            <noscript>
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/map/map-tablet.webp, ./img/map/map-tablet@2x.webp 2x">
+                <img class="map__image" src="./img/map/map-mobile.webp" srcset="./img/map/map-mobile@2x.webp 2x"
+                  width="320" height="455"
+                  alt="Фрагмент карты Санкт-Петербурга с отметкой на углу Волынского переулка и Большой Конюшенной улицы.">
+              </picture>
+            </noscript>
+            <div class="map__body" id="yandexmap"></div>
+=======
           <div class="contacts__map-wrapper">
             <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             title="Как нас найти." height="454" allowfullscreen>
             </iframe>
+>>>>>>> 16ead00804fa7c0a9bfc09fdbf8502d3592b85e1
           </div>
 
-          <a class="button contacts__button">Напишите нам</a>
-      </section>
+
+          <a class="contacts__button button">Напишите нам</a>
+        </section>
       </div>
     </div>
   </main>
@@ -251,11 +319,13 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo-wrapper">
-        <a class="footer__logo-link link" href="index.html">
-          <!-- кадрирование логотипа -->
-          <picture>
-            <img class="footer__logo-img" src="./img/logo/mishka-tablet-footer.svg" width="102" height="34" alt="Логотип интернет-магазина Mishka.">
-          </picture>
+        <a class="footer__logo-link" href="index.html">
+          <svg aria-label="Логотип магазина Мишка." width="102" height="34" viewBox="0 0 102 34" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.3 21.4c-.1-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.4v-.7c.3-1-3.2-.5-3.7.5-.3.3-.5.6-.4 1V8c-.6 3.1-1.5 6.2-2.5 9.3l-1.4 3.5c-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.1.2-1.5-3.2-1.4-3.9 0a8.3 8.3 0 0 0-.4 5.1c.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.8-.4.4-.5 1 0 1.4l.5.5c1 .7 3.6.1 3.6-1.3 0-4-.3-8.1-.4-12.3v-1.2l.2.4c.6 1.6 1.3 3.2 2.2 4.7 1 1.5 1.3 3 1.8 4.6-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .4 0 .7-.3.9-.4.3-.2.9-.7.7-1.1l-.1-.3c.5-1.3.7-2.6 1-4 .3-1.3.8-2.7 1.3-4 0 .6 0 1.2.2 1.9.2 2.6 0 5 0 7.5 0 .8 0 1.6.2 2.5 0 .3.4 1.8.3 2-.8.4-.6 1 .2 1.2.9.2 2 0 2.8-.7 1.2-1 .6-2.8.4-4.2-.5-2.3 0-5-.1-7.3ZM27.7 22c-.1-2-.8-3.8-.8-5.8 0-2.3.2-4.6-.2-6.9-.1-.6-4.1.1-4 1 .4 2.1.3 4.2.3 6.4 0 2 .5 3.9.7 5.9.3 2-.1 4.2 0 6.1.2 1 .9 2.7.2 3.6-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 .7-.8.2-2.4 0-3.4-.2-2 0-4.1-.1-6.1ZM44 18.8c-2-2.8-5.9-.8-8.6-1.5C34 16.9 34 15 34 13.9c0-1.4 0-2.7-.3-4 0-1.1 0-2.1.7-3l.8-.2 1.1-.1c1.5-.1 4.6.2 4 2.5-.3 1 3.6.3 4-.6 1.1-4.6-7.4-3.7-9.8-3.1-2.2.6-4.6 1.8-4.8 4.3-.1 1.2.3 2.4.3 3.6.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.2 1.2 3.3.2 4.4-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8 0-5.3-.2-1-4.2-.1-4 1 .3 2.5-1.4 6 2.4 6.5 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3 1-6.4-1-8.9ZM61.5 18.6c-.1-3.8-.7-7.5-.7-11.2 0-2-4-1.3-4 .3 0 3.5.5 7.1.7 10.7v.2l-6 .2c.3-4.6-.6-9.2-.3-13.8 0-.6-4-.1-4 1-.2 4.4.6 8.8.5 13.3l-.3 6.4.3 3.2c.1 1 .5 2.3.2 3.3-.2.8 3.7.3 4-.7.5-1.8-.2-4-.4-5.7-.2-1.7 0-3.5 0-5.2 2-.1 4.2-.3 6.2 0 0 1.4.2 2.8.3 4l.2 3.5c0 1 0 2.5-.2 3.5-.8 2.1 3 2 3.7.4.7-1.9.5-4.2.4-6.1-.2-2.5-.6-5-.6-7.3ZM78.4 23c-.9-2.8-2.4-5.2-3.6-7.8l3-5.9c.7-1.7 1.3-3.7 3-5 .6-.4.6-1-.3-1-.9-.1-2 .2-2.8.7a12.1 12.1 0 0 0-3 4.4l-3 6-.2.4c-.5.3-.8.8-.6 1.3l-2.5 4.6c-.3-5.5-1-11-1.2-16.5 0-1.3-4-.5-4 1 .3 6.8 1.3 13.6 1.4 20.5-.3.4-.2.6 0 .7l-.1 5.2c-.5.7.5 1.1 1 1.1h.2c.7 0 2.6-.3 2.7-1.4.2-2 .3-4.2.2-6.2a32 32 0 0 0 4.1-5.6c.8 1.5 1.5 3 2 4.6 1 2.7 2.3 5.2 3.1 8 .5 1.7 4.5.6 4-1-1-2.9-2.5-5.3-3.4-8.1ZM102 18.4c-.2-.8-1.4-.8-2.3-.8v-1l-.4-8c-.2-2.4-1.6-3.2-4-3.1-2.4 0-5.3.5-7.6 1.4a7 7 0 0 0-4.6 5.6c-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.4 0 .6 4 0 4-1V23l-.2-2.4c1.4-.6 3.8 0 5.2 0 1 .2 2.2-.1 3.2-.2 0 2.3 0 4.6.2 6.8 0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 .9-1 .5-3.8.4-5l-.1-5.7c1-.2 2.4-1 2.2-1.8Zm-14.7-.1-.3-3.7c-.2-2.3.1-5.6 2.3-7 .6-.3 1.8-.2 2.5-.3 1-.2 2-.4 2.8.2 1.2.8.9 3.6.9 4.8l.3 6-1.7.1c-2.3-.2-4.7-.6-6.8-.1ZM24.3 6.7c.5-.1 1-.2 1.5-.5L26 6c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5v4.4l.5.5a3 3 0 0 0 1.5.3Z"
+              fill="#000" />
+          </svg>
         </a>
       </div>
 
@@ -263,7 +333,8 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte link" href="https://vk.com/htmlacademy" rel="noopener noreferrer">
+            <a class="social__link social__link--vkontakte link" href="https://vk.com/htmlacademy"
+              rel="noopener noreferrer">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <!-- svg sprites -->
               <svg width="28" height="23" viewBox="0 0 28 23">
@@ -272,7 +343,8 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube link" href="https://www.youtube.com/user/htmlacademyru" rel="noopener noreferrer">
+            <a class="social__link social__link--youtube link" href="https://www.youtube.com/user/htmlacademyru"
+              rel="noopener noreferrer">
               <span class="visually-hidden">Мы в Ютубе</span>
               <!-- svg sprites -->
               <svg width="28" height="23" viewBox="0 0 28 23">
@@ -281,7 +353,8 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram link" href="https://t.me/htmlacademy" rel="noopener noreferrer">
+            <a class="social__link social__link--telegram link" href="https://t.me/htmlacademy"
+              rel="noopener noreferrer">
               <span class="visually-hidden">Мы в Телеграме</span>
               <!-- svg sprites -->
               <svg width="28" height="23" viewBox="0 0 28 23">
@@ -308,7 +381,6 @@
     </div>
   </footer>
 
-
   <div class="modal modal--close">
     <div class="modal__message">
       <section class="product-order">
@@ -328,15 +400,18 @@
             <legend class="visually-hidden">Варианты размеров:</legend>
             <label class="product-order__label">
               <span class="visually-hidden">Размер S</span>
-              <input class="product-order__input product-order__input--size-s" type="radio" name="product-size" value="S" checked>
+              <input class="product-order__input product-order__input--size-s" type="radio" name="product-size"
+                value="S" checked>
             </label>
             <label class="product-order__label">
               <span class="visually-hidden">Размер M</span>
-              <input class="product-order__input product-order__input--size-m" type="radio" name="product-size" value="M">
+              <input class="product-order__input product-order__input--size-m" type="radio" name="product-size"
+                value="M">
             </label>
             <label class="product-order__label">
               <span class="visually-hidden">Размер L</span>
-              <input class="product-order__input product-order__input--size-l" type="radio" name="product-size" value="L">
+              <input class="product-order__input product-order__input--size-l" type="radio" name="product-size"
+                value="L">
             </label>
           </fieldset>
           <button class="button product-order__add-button" type="submit">Добавить</button>
@@ -346,5 +421,7 @@
   </div>
 
   <script src="./js/script.js"></script>
+  <script src="./js/map.js"></script>
 </body>
+
 </html>
