@@ -1,5 +1,3 @@
-"use strict";
-
 // menu
 let navMains = document.querySelectorAll('.main-nav');
 let navToggle = document.querySelector('.navigation__button-toggle');
@@ -40,3 +38,23 @@ closeButton.onclick = function () {
   // console.log("click");
   OrderModal.classList.add('modal--close');
 };
+
+
+// map
+function funonload() {
+  let mapyandex = document.querySelector('.mapyandex');
+  mapyandex.classList.remove('mapnojs');
+  mapyandex.style.display='block';
+
+  // let mapyandexs = document.querySelectorAll('.mapyandex');
+  // for (let mapBody of mapyandexs) {
+  //   mapBody.classList.remove('mapnojs');
+  //   mapBody.style.display='block';
+  // }
+
+  // var mapBodys1 = document.querySelectorAll('.mapnojs');
+// for (var i = 0; i < mapBodys1.length; i++) {
+//   mapBodys1[i].classList.remove('mapnojs');
+//   mapBodys1[i].style.display='block';
+// }
+}

@@ -227,33 +227,47 @@
   }
 }
 
-// !!!!!!!!!!!!!!
+// MAP!!!!
 
 .map {
+  min-width: 320px;
+  height: 455px;
+  display: block;
   position: relative;
   overflow: hidden;
 }
 
-.map__body {
-  min-width: 320px;
-  width: 100vw;
-  height: 455px;
-}
-
 .map__imageif {
   width: 100%;
-  max-height: 455px;
+  min-height: 455px;
   position: absolute;
-  display: block;
+  content: "";
   object-fit: contain;
-  z-index: -1;
   border: none;
 }
 
 .map__imageim {
   width: 100%;
-  max-height: 455px;
+  min-height: 455px;
   position: absolute;
-  display: block;
-  object-fit: contain;
+  content: "";
+  object-fit: cover;
+  border: none;
+}
+
+.mapyandex {
+  min-width: 320px;
+  width: 100vw;
+  height: 455px;
+  position: absolute;
+  content: "";
+
+  @media (min-width: 1150px) {
+    width: 527px;
+    height: 457px;
+  }
+}
+
+.mapnojs {
+  display: none;
 }

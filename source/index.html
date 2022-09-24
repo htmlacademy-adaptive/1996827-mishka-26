@@ -9,13 +9,12 @@
   <link rel="apple-touch-icon" href="img/favicon/apple180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин домашнего уюта: Мишка</title>
 </head>
 
-<body>
+<body onload="funonload();">
   <header class="header">
     <nav class="header__navigation navigation">
 
@@ -255,20 +254,17 @@
           </div>
 
           <div class="contacts__map-wrapper contacts__map map">
-            <!-- width="560" -->
-            <iframe class="map__imageif" src="https://yandex.ru/map-widget/v1/-/CCUVf0QTwA" height="400"
+            <iframe class="map__imageif" src="https://yandex.ru/map-widget/v1/-/CCUVf0QTwA" height="455"
               allowfullscreen></iframe>
             <noscript>
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/map/map-tablet.webp, ./img/map/map-tablet@2x.webp 2x">
-                <img class="map__image" src="./img/map/map-mobile.webp" srcset="./img/map/map-mobile@2x.webp 2x"
-                  width="320" height="455"
-                  alt="Фрагмент карты Санкт-Петербурга с отметкой на углу Волынского переулка и Большой Конюшенной улицы.">
+                <img class="map__imageim" src="./img/map/map-mobile.webp" srcset="./img/map/map-mobile@2x.webp 2x" height="455" alt="Фрагмент карты Санкт-Петербурга с отметкой на углу Волынского переулка и Большой Конюшенной улицы.">
               </picture>
             </noscript>
-            <div class="map__body" id="yandexmap"></div>
+            <!-- style="display: none;" -->
+            <div class="mapyandex mapnojs" id="yandexmap"></div>
           </div>
-
 
           <a class="contacts__button button">Напишите нам</a>
         </section>
@@ -380,8 +376,8 @@
     </div>
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5" type="text/javascript"></script>
   <script src="./js/script.js"></script>
   <script src="./js/map.js"></script>
 </body>
-
 </html>
