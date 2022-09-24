@@ -20,11 +20,35 @@
   background-color: $color-white;
   z-index: 2;
 
+  @media (min-width: 768px) {
+    margin: 0;
+    position: static;
+    display: flex;
+    background-color: $color-gray-fon;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 1150px) {
+    background-color: $color-white;
+  }
+
   .navigation__item {
     margin-left: 76px;
     min-height: 79px;
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      width: 161px;
+      min-height: 64px;
+      justify-content: flex-start;
+    }
   }
 }
 

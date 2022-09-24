@@ -30,11 +30,23 @@
   background-color: $color-white;
   z-index: 2;
 
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 100%;
+    position: static;
+    top: 0;
+    background-color: $color-white;
+  }
+
   .navigation__item {
     margin-left: 76px;
     min-height: 79px;
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
   }
 }
 

@@ -1,9 +1,11 @@
+"use strict";
+
 // menu
 let navMains = document.querySelectorAll('.main-nav');
 let navToggle = document.querySelector('.navigation__button-toggle');
 
 for (let navMain of navMains) {
-  navMain.classList.remove('navigation--opened');
+  navMain.classList.add('navigation--closed');
 }
 
 // const mainnav = document.querySelectorAll('.mainnav');
@@ -12,16 +14,14 @@ for (let navMain of navMains) {
 // }
 
 navToggle.addEventListener('click', function () {
-
   for (let navMain of navMains) {
-    if (navMain.classList.contains('navigation--closed')) {
+    if (navMain.classList.contains('navigation--nojs')) {
       navMain.classList.add('navigation--opened');
       navMain.classList.remove('navigation--nojs');
-      navMain.classList.remove('navigation--closed');
     }
     else {
       navMain.classList.remove('navigation--opened');
-      navMain.classList.add('navigation--closed');
+      navMain.classList.add('navigation--nojs');
     }
   }
 });

@@ -40,6 +40,10 @@
   }
 
   &:hover {
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
+
     .catalog__toy-icon {
       fill: $color-green;
     }
@@ -50,6 +54,10 @@
   }
 
   &:active {
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
+
     .catalog__toy-icon {
       fill: rgba($color-green, 0.6);
     }
@@ -148,14 +156,10 @@
 
   .catalog__list {
     row-gap: 54px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .catalog__item {
-    margin-top: 0;
-  }
-
-  .product-card__image-link {
     margin-top: 0;
     min-height: 334px;
     display: grid;
@@ -227,7 +231,7 @@
     column-gap: 51px;
   }
 
-  .product-card__image-link {
+  .catalog__item {
     margin: 0;
     padding: 0;
     min-height: 659px;
@@ -244,10 +248,6 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .catalog__toy-name--laundry_basket {
-    padding-top: 0;
   }
 
   .catalog__toy-description {
