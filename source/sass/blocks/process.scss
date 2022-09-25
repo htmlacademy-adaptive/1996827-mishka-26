@@ -23,6 +23,25 @@
   width: 100%;
   min-height: 150px;
   margin-bottom: 28px;
+  display: block;
+
+  outline: none;
+  outline-offset: -2px;
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
 }
 
 .process__text {

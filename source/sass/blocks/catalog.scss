@@ -29,6 +29,14 @@
   grid-template-columns: minmax(260px, 1fr);
 }
 
+.catalog__toy-button {
+  min-width: 21px;
+  min-height: 18px;
+  width: 21px;
+  height: 18px;
+  border: none;
+}
+
 .catalog__item {
   display: block;
   box-sizing: border-box;
@@ -159,7 +167,7 @@
     margin-bottom: 53px;
   }
 
-  .catalog__item {
+  .catalog__item .product-card__image-link {
     margin-top: 0;
     min-height: 334px;
     display: grid;
@@ -231,7 +239,7 @@
     column-gap: 51px;
   }
 
-  .catalog__item {
+  .catalog__item .product-card__image-link {
     margin: 0;
     padding: 0;
     min-height: 659px;
