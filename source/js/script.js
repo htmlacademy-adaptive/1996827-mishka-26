@@ -3,7 +3,7 @@ let navMains = document.querySelectorAll('.main-nav');
 let navToggle = document.querySelector('.navigation__button-toggle');
 
 for (let navMain of navMains) {
-  navMain.classList.remove('navigation--opened');
+  navMain.classList.add('navigation--closed');
 }
 
 // const mainnav = document.querySelectorAll('.mainnav');
@@ -12,16 +12,14 @@ for (let navMain of navMains) {
 // }
 
 navToggle.addEventListener('click', function () {
-
   for (let navMain of navMains) {
-    if (navMain.classList.contains('navigation--closed')) {
+    if (navMain.classList.contains('navigation--nojs')) {
       navMain.classList.add('navigation--opened');
       navMain.classList.remove('navigation--nojs');
-      navMain.classList.remove('navigation--closed');
     }
     else {
       navMain.classList.remove('navigation--opened');
-      navMain.classList.add('navigation--closed');
+      navMain.classList.add('navigation--nojs');
     }
   }
 });
@@ -40,3 +38,23 @@ closeButton.onclick = function () {
   // console.log("click");
   OrderModal.classList.add('modal--close');
 };
+
+
+// map
+function funonload() {
+  let mapyandex = document.querySelector('.mapyandex');
+  mapyandex.classList.remove('mapnojs');
+  mapyandex.style.display='block';
+
+  // let mapyandexs = document.querySelectorAll('.mapyandex');
+  // for (let mapBody of mapyandexs) {
+  //   mapBody.classList.remove('mapnojs');
+  //   mapBody.style.display='block';
+  // }
+
+  // var mapBodys1 = document.querySelectorAll('.mapnojs');
+// for (var i = 0; i < mapBodys1.length; i++) {
+//   mapBodys1[i].classList.remove('mapnojs');
+//   mapBodys1[i].style.display='block';
+// }
+}

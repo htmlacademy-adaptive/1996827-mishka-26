@@ -9,25 +9,25 @@
   <link rel="apple-touch-icon" href="img/favicon/apple180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://api-maps.yandex.ru/2.1?apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5&lang=ru_RU" type="text/javascript"></script>
+  <meta name="keywords" content="корзинки, игрушкиб, домашний интерьер">
+  <meta name="description" content="Интернет магазин Mishka">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин домашнего уюта: Мишка</title>
 </head>
 
-<body>
+<body onload="funonload();">
   <header class="header">
     <nav class="header__navigation navigation">
 
-      <div class="main-nav navigation__logo-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__logo-wrapper navigation--nojs ">
         <!-- aria-label="Логотип интернет-магазина Mishka." -->
         <a class="navigation__logo-link link" href="/">
           <!-- кадрирование логотипа -->
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/logo/mishka-desktop-header.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/mishka-tablet-header.svg">
-            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35"
-              alt="Логотип интернет-магазина Mishka.">
+            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
           </picture>
         </a>
 
@@ -36,7 +36,7 @@
         </button>
       </div>
 
-      <div class="main-nav navigation__site-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__site-wrapper navigation--nojs ">
         <ul class="navigation__site reset-list">
           <li class="navigation__item navigation__item--catalog">
             <a class="navigation__link link" href="catalog.html">Каталог товаров</a>
@@ -58,7 +58,7 @@
         </ul>
       </div>
 
-      <div class="main-nav navigation__user-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__user-wrapper navigation--nojs ">
         <ul class="navigation__user reset-list">
           <li class="navigation__item navigation__item--search">
             <a class="link navigation__link navigation__link-search" href="#">
@@ -115,7 +115,7 @@
             <a href="#" class="hero__link">
               <span class="hero__categotry">Детские игрушки</span>
               <!-- svg sprites -->
-              <svg width="60" height="60" viewBox="0 0 60 60">
+              <svg class="hero__categotry-toy" width="60" height="60" viewBox="0 0 60 60">
                 <use xlink:href="../img/sprites.svg#icon-lego-square"></use>
               </svg>
             </a>
@@ -254,22 +254,22 @@
           </div>
 
           <div class="contacts__map-wrapper contacts__map map">
-            <!-- width="560" -->
-            <iframe class="map__imageif" src="https://yandex.ru/map-widget/v1/-/CCUVf0QTwA" height="400"
-              allowfullscreen></iframe>
+            <iframe class="map__imageif link" src="https://yandex.ru/map-widget/v1/-/CCUVf0QTwA" height="455" allowfullscreen title="Карта с адресом">
+            </iframe>
             <noscript>
               <picture>
                 <source media="(min-width: 768px)" srcset="./img/map/map-tablet.webp, ./img/map/map-tablet@2x.webp 2x">
-                <img class="map__image" src="./img/map/map-mobile.webp" srcset="./img/map/map-mobile@2x.webp 2x"
-                  width="320" height="455"
-                  alt="Фрагмент карты Санкт-Петербурга с отметкой на углу Волынского переулка и Большой Конюшенной улицы.">
+                <img class="map__imageim" src="./img/map/map-mobile.webp" srcset="./img/map/map-mobile@2x.webp 2x" height="455" alt="Фрагмент карты Санкт-Петербурга с отметкой на углу Волынского переулка и Большой Конюшенной улицы.">
               </picture>
             </noscript>
-            <div class="map__body" id="yandexmap"></div>
+            <!-- style="display: none;" -->
+            <div class="mapyandex mapnojs" id="yandexmap"></div>
           </div>
 
-
-          <a class="contacts__button button">Напишите нам</a>
+          <!-- <a class="contacts__button" href="#">Напишите нам</a> -->
+          <button class="contacts__button button" type="button">
+            Напишите нам
+          </button>
         </section>
       </div>
     </div>
@@ -379,8 +379,9 @@
     </div>
   </div>
 
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5" type="text/javascript"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5"></script>
   <script src="./js/script.js"></script>
   <script src="./js/map.js"></script>
 </body>
-
 </html>

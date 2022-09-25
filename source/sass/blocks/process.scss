@@ -2,7 +2,7 @@
 
 .process {
   padding-top: 21px;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
   display: grid;
   position: relative;
   border: 1px solid #e5e5e5;
@@ -21,7 +21,27 @@
 
 .process__video {
   width: 100%;
-  padding-bottom: 6px;
+  min-height: 150px;
+  margin-bottom: 28px;
+  display: block;
+
+  outline: none;
+  outline-offset: -2px;
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
 }
 
 .process__text {
@@ -36,7 +56,7 @@
 
 .process__button {
   position: absolute;
-  top: 135px;
+  top: 140px;
   left: 30%;
   border: none;
   background-color: transparent;
@@ -53,7 +73,7 @@
   .process {
     padding-top: 0;
     padding-bottom: 46px;
-    margin-bottom: 62px;
+    margin-bottom: 64px;
   }
 
   .process__title {
@@ -75,8 +95,8 @@
   }
 
   .process__button {
-    top: 185px;
-    left: 42%;
+    top: 180px;
+    left: 41%;
   }
 
   .process__link {
@@ -86,7 +106,6 @@
   }
 
   .process__text {
-    width: 650px;
     padding: 0 17px 0 40px;
     font-weight: 400;
     font-size: 15px;
@@ -97,12 +116,11 @@
 @media (min-width: $desktop-width) {
   .process {
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
     width: 1050px;
     min-height: 455px;
     grid-template-columns: 682px 290px;
-    // grid-template-rows: 171px minmax(171px, 1fr) 112px;
-    grid-template-rows: 171px 169px 112px;
+    grid-template-rows: 171px minmax(171px, 1fr) 112px;
     column-gap: 78px;
   }
 
@@ -118,8 +136,6 @@
 
   .process__text {
     padding: 0;
-    margin-bottom: 0;
-    width: 230px;
     font-size: 15px;
     line-height: 30px;
     display: block;

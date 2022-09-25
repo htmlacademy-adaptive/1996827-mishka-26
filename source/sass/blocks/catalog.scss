@@ -29,6 +29,43 @@
   grid-template-columns: minmax(260px, 1fr);
 }
 
+.catalog__toy-button {
+  padding: 0;
+  min-width: 21px;
+  min-height: 18px;
+  width: 21px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  // border: none;
+  cursor: pointer;
+
+  outline: none;
+  outline-offset: -2px;
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid $color-green;
+    outline-offset: -2px;
+    border-radius: 3px;
+    z-index: 50;
+  }
+}
+
 .catalog__item {
   display: block;
   box-sizing: border-box;
@@ -40,6 +77,10 @@
   }
 
   &:hover {
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
+
     .catalog__toy-icon {
       fill: $color-green;
     }
@@ -50,6 +91,10 @@
   }
 
   &:active {
+    // .catalog__toy-name {
+    //   color: rgba($color-black, 0.6);
+    // }
+
     .catalog__toy-icon {
       fill: rgba($color-green, 0.6);
     }
@@ -148,14 +193,10 @@
 
   .catalog__list {
     row-gap: 54px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
-  .catalog__item {
-    margin-top: 0;
-  }
-
-  .product-card__image-link {
+  .catalog__item .product-card__image-link {
     margin-top: 0;
     min-height: 334px;
     display: grid;
@@ -227,7 +268,7 @@
     column-gap: 51px;
   }
 
-  .product-card__image-link {
+  .catalog__item .product-card__image-link {
     margin: 0;
     padding: 0;
     min-height: 659px;
@@ -244,10 +285,6 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .catalog__toy-name--laundry_basket {
-    padding-top: 0;
   }
 
   .catalog__toy-description {

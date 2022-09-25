@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <meta name="keywords" content="корзинки, игрушкиб, домашний интерьер">
+  <meta name="description" content="Интернет магазин Mishka">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог товаров магазина Мишка</title>
@@ -121,10 +123,14 @@
                 <p class="catalog__toy-description toy-description-rabbit-desktop">Рост 30 см, вес 200 г</p>
                 <div class="catalog__toy-price-wrapper">
                   <p class="catalog__toy-price">1 200 руб.</p>
-                  <!-- svg sprites -->
-                  <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
-                    <use xlink:href="img/sprites.svg#icon-cart"></use>
-                  </svg>
+
+                  <button class="catalog__toy-button" aria-label="Перейти в корзину">
+                    <!-- svg sprites -->
+                    <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
+                      <use xlink:href="img/sprites.svg#icon-cart"></use>
+                    </svg>
+                  </button>
+
                 </div>
               </div>
             </a>
@@ -143,14 +149,17 @@
                   alt="Корзинка для белья.">
               </picture>
               <div class="catalog__toy-wrapper">
-                <p class="catalog__toy-name catalog__toy-name--laundry_basket">Корзинка для белья</p>
+                <p class="catalog__toy-name">Корзинка для белья</p>
                 <p class="catalog__toy-description catalog__toy-description--h">Диаметр 15 см, высота 10 см</p>
                 <div class="catalog__toy-price-wrapper">
                   <p class="catalog__toy-price">690 руб.</p>
-                  <!-- svg sprites -->
-                  <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
-                    <use xlink:href="img/sprites.svg#icon-cart"></use>
-                  </svg>
+                  <button class="catalog__toy-button" aria-label="Перейти в корзину">
+                    <!-- svg sprites -->
+                    <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
+                      <use xlink:href="img/sprites.svg#icon-cart"></use>
+                    </svg>
+                  </button>
+
                 </div>
               </div>
             </a>
@@ -174,10 +183,13 @@
                 <p class="catalog__toy-description">Диаметр 30 см, высота 30 см</p>
                 <div class="catalog__toy-price-wrapper">
                   <p class="catalog__toy-price">1 500 руб.</p>
-                  <!-- svg sprites -->
-                  <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
-                    <use xlink:href="img/sprites.svg#icon-cart"></use>
-                  </svg>
+                  <button class="catalog__toy-button" aria-label="Перейти в корзину">
+                    <!-- svg sprites -->
+                    <svg class="catalog__toy-icon icon" width="21" height="18" viewBox="0 0 21 18">
+                      <use xlink:href="img/sprites.svg#icon-cart"></use>
+                    </svg>
+                  </button>
+
                 </div>
               </div>
             </a>
@@ -191,7 +203,7 @@
         <h2 class="process__title">Процесс производства</h2>
 
         <div class="process-video-wrapper">
-          <a class="video__link" href="https://www.youtube.com/watch?v=22RSyTY_NaE">
+          <a class="video__link" href="https://www.youtube.com/watch?v=22RSyTY_NaE" aria-label="Видео производства игрушек">
             <video class="process__video" poster="./img/catalog/basket_production-desktop.webp" preload="metadata">
               <source src="movie.mp4" type="video/mp4" />
               <!-- <source src="movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> -->
@@ -201,7 +213,7 @@
             </video>
           </a>
 
-          <button class="process__button" type="button">
+          <button class="process__button" type="button" aria-label="Включить видео">
             <svg class="icon" width="101" height="77" viewBox="0 0 101 77">
               <use xlink:href="img/sprites.svg#icon-play"></use>
             </svg>

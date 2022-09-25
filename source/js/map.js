@@ -7,6 +7,8 @@
 // Его необходимо использовать в дальнейшем при подключении API.
 // Примечание. Ключ будет активирован в течение 15 минут после получения.
 
+// const { init } = require("browser-sync");
+
 // https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU
 // API-ключ получение: https://developer.tech.yandex.ru/ -> JavaScript API и HTTP Геокодер
 // API-ключ: 9d06696d-b312-4eb1-929a-a74d5b2c64e5
@@ -21,6 +23,7 @@
 //  src="https://api-maps.yandex.ru/2.1?apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5&lang=ru_RU" type="text/javascript">
 // </script>
 
+ymaps = window.ymaps;
 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('yandexmap', {
