@@ -23,16 +23,6 @@
 //  src="https://api-maps.yandex.ru/2.1?apikey=9d06696d-b312-4eb1-929a-a74d5b2c64e5&lang=ru_RU" type="text/javascript">
 // </script>
 
-// import { loadYmap } from 'vue-yandex-maps';
-
-// export default {
-//   async mounted() {
-//     await loadYmap();
-
-//     ymaps = window.ymaps;
-//   }
-// };
-
 ymaps = window.ymaps;
 
 ymaps.ready(function () {
