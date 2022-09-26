@@ -2,7 +2,7 @@
 @use "../global/mixins.scss" as *;
 
 .form-container {
-  padding-bottom: 55px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -12,6 +12,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 55px;
 }
 
 .form__label {
@@ -526,9 +527,10 @@
 
 .form__submit {
   width: 260px;
-  min-height: 52px;
+  height: 52px;
   padding: 18px 37px;
   font-size: 17px;
+  // margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;

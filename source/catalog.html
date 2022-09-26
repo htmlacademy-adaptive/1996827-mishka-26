@@ -20,15 +20,14 @@
   <header class="header header-catalog">
     <nav class="header__navigation navigation">
 
-      <div class="main-nav navigation__logo-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__logo-wrapper navigation--nojs ">
         <!-- aria-label="Логотип интернет-магазина Mishka." -->
         <a class="navigation__logo-link link" href="/">
           <!-- кадрирование логотипа -->
           <picture>
             <source media="(min-width: 1150px)" srcset="./img/logo/mishka-desktop-header.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/mishka-tablet-header.svg">
-            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35"
-              alt="Логотип интернет-магазина Mishka.">
+            <img class="header__logo-img image" src="./img/logo/mishka-mobile-header.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
           </picture>
         </a>
 
@@ -37,7 +36,7 @@
         </button>
       </div>
 
-      <div class="main-nav navigation__site-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__site-wrapper navigation--nojs ">
         <ul class="navigation__site reset-list">
           <li class="navigation__item navigation__item--catalog">
             <a class="navigation__link link" href="catalog.html">Каталог товаров</a>
@@ -59,7 +58,7 @@
         </ul>
       </div>
 
-      <div class="main-nav navigation__user-wrapper navigation--opened navigation--closed navigation--nojs">
+      <div class="main-nav navigation__user-wrapper navigation--nojs ">
         <ul class="navigation__user reset-list">
           <li class="navigation__item navigation__item--search">
             <a class="link navigation__link navigation__link-search" href="#">
@@ -149,7 +148,7 @@
                   alt="Корзинка для белья.">
               </picture>
               <div class="catalog__toy-wrapper">
-                <p class="catalog__toy-name">Корзинка для белья</p>
+                <p class="catalog__toy-name catalog__tname">Корзинка для белья</p>
                 <p class="catalog__toy-description catalog__toy-description--h">Диаметр 15 см, высота 10 см</p>
                 <div class="catalog__toy-price-wrapper">
                   <p class="catalog__toy-price">690 руб.</p>
@@ -203,15 +202,26 @@
         <h2 class="process__title">Процесс производства</h2>
 
         <div class="process-video-wrapper">
-          <a class="video__link" href="https://www.youtube.com/watch?v=22RSyTY_NaE" aria-label="Видео производства игрушек">
+          <!-- <a class="video__link" href="https://www.youtube.com/watch?v=22RSyTY_NaE" aria-label="Видео производства игрушек">
             <video class="process__video" poster="./img/catalog/basket_production-desktop.webp" preload="metadata">
               <source src="movie.mp4" type="video/mp4" />
-              <!-- <source src="movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> -->
+              <source src="movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
               <source src="movie.webm" type='video/webm; codecs="vp8, vorbis"' />
               <source src="movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
-              <!-- Ваш браузер не поддерживает встроенные видео. Скачайте видео по <a href="movie.mp4">ссылке</a> -->
+              Ваш браузер не поддерживает встроенные видео. Скачайте видео по <a href="movie.mp4">ссылке</a>
             </video>
-          </a>
+          </a> -->
+          <picture>
+            <source srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2x.webp 2x" media="(min-width:768px)">
+            <source srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2x.webp 2x" media="(min-width:100px)">
+            <source srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x" media="(min-width:768px)">
+            <img class="video__photo" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства наших изделий.">
+          </picture>
+          <!-- <div class="video__wrapper">
+
+          </div> -->
 
           <button class="process__button" type="button" aria-label="Включить видео">
             <svg class="icon" width="101" height="77" viewBox="0 0 101 77">

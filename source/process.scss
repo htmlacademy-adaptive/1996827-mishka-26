@@ -46,8 +46,7 @@
 
 .process__text {
   margin: 0;
-  margin-top: 34px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   padding-left: 34px;
   padding-right: 30px;
   font-weight: 400;
@@ -57,7 +56,7 @@
 
 .process__button {
   position: absolute;
-  top: 135px;
+  top: 140px;
   left: 30%;
   border: none;
   background-color: transparent;
@@ -74,7 +73,7 @@
   .process {
     padding-top: 0;
     padding-bottom: 46px;
-    margin-bottom: 58px;
+    margin-bottom: 64px;
   }
 
   .process__title {
@@ -88,8 +87,6 @@
   .process-video-wrapper {
     order: -1;
     min-height: 455px;
-    margin-top: 0;
-    margin-bottom: 32px;
   }
 
   .process__video {
@@ -109,24 +106,21 @@
   }
 
   .process__text {
-    margin-top: 0;
     padding: 0 17px 0 40px;
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
-    width: 650px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .process {
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
     width: 1050px;
     min-height: 455px;
     grid-template-columns: 682px 290px;
-    // grid-template-rows: 171px minmax(171px, 1fr) 112px;
-    grid-template-rows: 171px 170px 112px;
+    grid-template-rows: 171px minmax(171px, 1fr) 112px;
     column-gap: 78px;
   }
 
@@ -145,8 +139,6 @@
     font-size: 15px;
     line-height: 30px;
     display: block;
-    width: 252px;
-    margin-bottom: 0;
   }
 
   .process__text .br1 {
@@ -170,9 +162,5 @@
   .process__link {
     margin: 0;
     min-width: 230px;
-  }
-
-  .catalog__tname {
-    margin-top: -26px;
   }
 }
