@@ -141,6 +141,15 @@
   //   padding-left: 7px;
   //   margin-top: -10px;
   // }
+  .hero__link {
+    padding-top: 5px;
+    // padding-left: 3px;
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -157,7 +166,9 @@
   }
 
   .hero__link {
-    padding-top: 15px;
+    padding-top: 1px;
+    // padding-left: 3px;
+    margin-left: 5px;
   }
 
   .hero__list {

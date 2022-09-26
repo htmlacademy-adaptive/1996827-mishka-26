@@ -63,7 +63,8 @@
       height: 24px;
       position: absolute;
       content: "";
-      top: 670px;
+      // top: 670px;
+      top: 153px;
       background-image: url("../img/icon/zigzag-line-tablet-while.svg");
       z-index: 2;
     }
@@ -94,7 +95,7 @@
       position: absolute;
       content: "";
       top: 666px;
-      left: -48px;
+      left: 7px;
       background-image: url("../img/icon/zigzag-line-desktop-while555.svg");
     }
   }
@@ -120,9 +121,10 @@
       content: "";
       top: 170px;
       // left: -28px;
+      // left: 7px;
       // background-image: url("../img/icon/zigzag-line-desktop-while.svg");
       // background-image: url("../img/icon/zigzag-line-desktop-while555.svg");
-      background-image: url("../img/icon/zigzag-line-desktop-while555.svg");
+      background-image: url("../img/icon/frame4.svg");
     }
   }
 
@@ -132,7 +134,9 @@
       position: absolute;
       content: "";
       top: 170px;
-      background-image: url("../img/icon/zigzag-line-desktop-while.svg");
+      left: 7px;
+      // background-image: url("../img/icon/zigzag-line-desktop-while.svg");
+      background-image: url("../img/icon/frame4.svg");
     }
   }
 }

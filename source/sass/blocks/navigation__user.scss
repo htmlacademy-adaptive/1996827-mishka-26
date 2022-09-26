@@ -118,6 +118,10 @@
       margin-right: 31px;
     }
   }
+
+  .navigation__link--knitting {
+    padding-left: 6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -133,5 +137,9 @@
 
   .navigation__user .navigation__user-cart-icon {
     margin-right: 32px;
+  }
+
+  .navigation__link--knitting {
+    padding-left: 1px;
   }
 }
